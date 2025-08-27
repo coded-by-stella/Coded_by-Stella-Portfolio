@@ -16,17 +16,26 @@
 <body>
 
   <!-- Header -->
-  <header class="section section--panel site-header">
-    <div class="container">
-      <div class="grid" style="align-items:center; grid-template-columns: 1fr auto;">
-        <h1 class="m-0">Coded_by_Stella</h1>
-        <nav aria-label="Primary" style="display:flex; align-items:center; gap: 1rem;">
+<header class="section section--panel site-header">
+  <div class="container">
+    <div class="grid" style="align-items:center; grid-template-columns: 1fr auto;">
+      <h1 class="m-0">Coded_by_Stella</h1>
+
+      <div class="site-actions">
+        <!-- Mobile nav: toggle -->
+        <button class="nav-toggle" id="navToggle" type="button"
+                aria-label="Open menu" aria-expanded="false" aria-controls="primaryNav">
+          <span class="nav-toggle__bars" aria-hidden="true"></span>
+        </button>
+
+        <!-- Primary nav -->
+        <nav id="primaryNav" class="primary-nav" aria-label="Primary">
           <ul class="m-0" style="display:flex; gap: 1rem; list-style:none; padding:0; margin-right:.5rem;">
-              <li><a href="index.html">About Stella</a></li>
-          <li><a href="certifications.html">Certificates</a></li>
-          <li><a href="marketing-courses.html">Marketing Training</a></li>
-          <li><a href="projects.html">Portfolio</a></li>
-          <li><a href="contact.html">Contact me</a></li>
+            <li><a href="index.html">About Stella</a></li>
+            <li><a href="certifications.html">Certificates</a></li>
+            <li><a href="marketing-courses.html">Marketing Training</a></li>
+            <li><a href="projects.html">Portfolio</a></li>
+            <li><a href="contact.html">Contact me</a></li>
           </ul>
 
           <!-- Theme toggle -->
@@ -37,7 +46,9 @@
         </nav>
       </div>
     </div>
-  </header>
+  </div>
+</header>
+
 
   <!-- Main -->
   <main class="section">

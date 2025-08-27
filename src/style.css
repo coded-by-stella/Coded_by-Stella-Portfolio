@@ -655,3 +655,60 @@ footer .grid{
 .center{ text-align:center; }
 blockquote{ margin:.5rem auto; font-style:italic; opacity:.9; }
 .is-active{ text-decoration:underline; text-underline-offset:4px; }
+
+/* Mobile nav: container */
+.site-actions{ display:flex; align-items:center; gap:1rem; }
+
+/* Mobile nav: toggle button */
+.nav-toggle{
+  display:none; align-items:center; justify-content:center;
+  width:42px; height:42px; border-radius:999px; border:1px solid transparent;
+  background:transparent; cursor:pointer;
+}
+.nav-toggle:focus-visible{ outline:2px solid currentColor; outline-offset:2px; }
+
+/* Mobile nav: hamburger icon */
+.nav-toggle__bars{
+  width:22px; height:14px; display:block;
+  background:
+    linear-gradient(currentColor,currentColor) 0 0/100% 2px no-repeat,
+    linear-gradient(currentColor,currentColor) 0 6px/100% 2px no-repeat,
+    linear-gradient(currentColor,currentColor) 0 12px/100% 2px no-repeat;
+  transition: transform .25s ease;
+}
+
+/* Primary nav: desktop baseline */
+.primary-nav{ display:flex; align-items:center; gap:1rem; }
+
+/* Primary nav: mobile collapse */
+@media (max-width:760px){
+  .nav-toggle{ display:inline-flex; }
+  .primary-nav{
+    width:100%;
+    display:block;
+    border-radius:18px;
+    border:1px solid color-mix(in oklab, currentColor 12%, transparent);
+    background: color-mix(in oklab, currentColor 7%, transparent);
+    padding:.75rem;
+    max-height:0;
+    overflow:hidden;
+    opacity:0;
+    transform: translateY(-4px);
+    transition: max-height .35s ease, opacity .25s ease, transform .25s ease;
+  }
+  .primary-nav.is-open{
+    max-height:70vh;
+    opacity:1;
+    transform: translateY(0);
+  }
+  .primary-nav ul{
+    display:flex !important;
+    flex-direction:column;
+    gap:.6rem !important;
+    margin:0 .25rem .5rem 0 !important;
+  }
+  .theme-toggle{ width:100%; justify-content:center; }
+}
+
+/* Active link */
+.is-active{ text-decoration:underline; text-underline-offset:4px; }

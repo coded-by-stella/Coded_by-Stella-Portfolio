@@ -93,3 +93,44 @@
     if (hrefFile === currentFile) a.classList.add('is-active');
   });
 })();
+
+(() => {
+  /* Mobile nav: elements */
+  const toggle = document.getElementById('navToggle');
+  const nav    = document.getElementById('primaryNav');
+  if (!toggle || !nav) return;
+
+  /* Mobile nav: open/close */
+  const close = () => {
+    nav.classList.remove('is-open');
+    toggle.setAttribute('aria-expanded','false');
+    toggle.setAttribute('aria-label','Open menu');
+  };
+  const open = () => {
+    nav.classList.add('is-open');
+    toggle.setAttribute('aria-expanded','true');
+    toggle.setAttribute('aria-label','Close menu');
+  };
+
+  /* Mobile nav: toggle click */
+  toggle.addEventListener('click', () => {
+    nav.classList.contains('is-open') ? close() : open();
+  });
+
+  /* Mobile nav: close on outside click */
+  document.addEventListener('click', (e) => {
+    if (!nav.classList.contains('is-open')) return;
+    const isToggle = toggle.contains(e.target);
+    const isInside = nav.contains(e.target);
+    if (!isToggle && !isInside) close();
+  });
+
+  /* Mobile nav: close on Escape */
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') close();
+  });
+
+  /* Mobile nav: reset on resize up */
+  const mq = window.matchMedia('(min-width: 761px)');
+  mq.addEventListener?.('change', () => close());
+})();
