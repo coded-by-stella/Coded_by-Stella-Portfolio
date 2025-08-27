@@ -77,49 +77,29 @@
             - FormSubmit (default): replace the email below if needed.
             - Works with Netlify too: keep name="contact" and the hidden 'form-name' input if you deploy on Netlify.
           -->
-          <form
-            name="contact"
-            method="POST"
-            action="https://formsubmit.co/stella.marrali.no@gmail.com"
-            data-netlify="true"
-            netlify-honeypot="bot-field"
-            class="stack"
-          >
-            <!-- Netlify needs this -->
-            <input type="hidden" name="form-name" value="contact" />
-            <!-- FormSubmit options -->
-            <input type="hidden" name="_subject" value="[Coded_by_Stella] New contact form message" />
-            <input type="hidden" name="_template" value="table" />
-            <!-- Redirect back with a flag so we can show a success message -->
-            <input type="hidden" name="_next" value="contact.html?sent=1" />
-            <!-- Disable FormSubmit captcha (optional) -->
-            <input type="hidden" name="_captcha" value="false" />
-            <!-- Honeypot -->
-            <p style="display:none;">
-              <label>Don’t fill this out if you’re human: <input name="bot-field" /></label>
-            </p>
+          <form action="https://formsubmit.co/stella.marrali@gmail.com" method="POST" class="form" id="contactForm">
+  <input type="hidden" name="_next" value="https://portfolio-codedbystella.netlify.app/thanks.html">
+  <input type="hidden" name="_subject" value="[Coded_by_Stella] New contact">
+  <input type="hidden" name="_template" value="table">
+  <input type="hidden" name="_captcha" value="false">
+  <input type="text" name="_honey" style="display:none">
+  
+  <div class="form__field">
+    <label for="name">Name</label>
+    <input class="form__input" id="name" type="text" name="name" required>
+  </div>
+  <div class="form__field">
+    <label for="email">E-mail</label>
+    <input class="form__input" id="email" type="email" name="email" required>
+  </div>
+  <div class="form__field">
+    <label for="message">Message</label>
+    <textarea class="form__textarea" id="message" name="message" required></textarea>
+  </div>
 
-            <div class="grid" style="grid-template-columns: 1fr 1fr; gap: .75rem;">
-              <div class="stack">
-                <label for="name"><strong>Name</strong></label>
-                <input id="name" name="name" type="text" autocomplete="name" required />
-              </div>
+  <button class="btn" type="submit">Send</button>
+</form>
 
-              <div class="stack">
-                <label for="email"><strong>Email</strong></label>
-                <input id="email" name="email" type="email" autocomplete="email" required />
-              </div>
-            </div>
-
-            <div class="stack">
-              <label for="message"><strong>Message</strong></label>
-              <textarea id="message" name="message" rows="6" required></textarea>
-            </div>
-
-            <div class="center">
-              <button class="btn" type="submit">Send message</button>
-            </div>
-          </form>
         </section>
 
         <p class="center" style="margin-top:2rem;">
