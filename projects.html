@@ -15,26 +15,21 @@
 </head>
 <body>
 
- <!-- Header -->
+ <!-- Header (keep just one nav like this) -->
 <header class="section section--panel site-header">
   <div class="container">
-    <div class="grid" style="align-items:center; grid-template-columns: 1fr auto;">
+    <div class="grid grid--header">
       <h1 class="m-0">Coded_by_Stella</h1>
 
-      <nav class="site-nav" aria-label="Primary">
-        <!-- Mobile toggle -->
-        <button id="menuToggle"
-                class="site-nav__button"
-                type="button"
-                aria-label="Open menu"
-                aria-controls="primaryMenu"
-                aria-expanded="false">
-          <!-- icon -->
-          <span aria-hidden="true">☰</span>
-        </button>
+      <!-- Mobile burger -->
+      <button id="navToggle" class="nav-toggle" aria-expanded="false" aria-controls="primaryNav" aria-label="Open menu">
+        <span class="sr-only">Menu</span>
+        <span class="nav-toggle__bars" aria-hidden="true"></span>
+      </button>
 
-        <!-- Desktop list -->
-        <ul class="site-nav__list">
+      <!-- Single primary nav -->
+      <nav id="primaryNav" class="primary-nav" aria-label="Primary">
+        <ul class="nav-list">
           <li><a href="index.html">About Stella</a></li>
           <li><a href="certifications.html">Certificates</a></li>
           <li><a href="marketing-courses.html">Marketing Training</a></li>
@@ -50,20 +45,8 @@
       </nav>
     </div>
   </div>
-
-  <!-- Mobile overlay panel -->
-  <div id="primaryMenu" class="site-nav__panel" hidden>
-    <div class="site-nav__sheet">
-      <ul>
-        <li><a href="index.html">About Stella</a></li>
-        <li><a href="certifications.html">Certificates</a></li>
-        <li><a href="marketing-courses.html">Marketing Training</a></li>
-        <li><a href="projects.html">Portfolio</a></li>
-        <li><a href="contact.html">Contact me</a></li>
-      </ul>
-    </div>
-  </div>
 </header>
+
 
 
 
