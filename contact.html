@@ -65,7 +65,7 @@
 
         <!-- Success message (shown after redirect) -->
         <div id="formSuccess" class="card" style="display:none;" role="status" aria-live="polite">
-          <p class="m-0"><strong>Thank you!</strong> Your message has been sent. I’ll get back to you soon.</p>
+          <p class="m-0"><strong>Thank you for contacting me!</strong> Your message has been sent. I’ll get back to you soon 👋🏻.</p>
         </div>
 
         <!-- Contact form -->
@@ -73,17 +73,15 @@
           <h3>Send a message</h3>
 
           <!--
-            Form options:
-            - FormSubmit (default): replace the email below if needed.
-            - Works with Netlify too: keep name="contact" and the hidden 'form-name' input if you deploy on Netlify.
+            Form 
           -->
           <form action="https://formsubmit.co/c2a16687254453911cd1aee78fc23d9c" method="POST" id="contactForm" class="form">
   <!-- anti-spam -->
   <input type="text" name="_honey" style="display:none">
   <input type="hidden" name="_captcha" value="false">
-  <!-- redirect dopo invio (ASSOLUTO) -->
+  <!-- redirect after send -->
   <input type="hidden" name="_next" value="https://portfolio-codedbystella.netlify.app/thanks.html">
-  <!-- opzionali -->
+  <!-- optionals -->
   <input type="hidden" name="_subject" value="[Coded_by_Stella] New contact">
   <input type="hidden" name="_template" value="table">
 
