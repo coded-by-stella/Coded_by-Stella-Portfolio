@@ -291,3 +291,103 @@ footer .grid{ display:grid; grid-template-columns:1fr auto; align-items:center; 
   position:absolute; width:1px; height:1px; padding:0; margin:-1px; overflow:hidden;
   clip:rect(0,0,0,0); white-space:nowrap; border:0;
 }
+/* === Emergency overrides (put at very end) === */
+
+/* Hide the old duplicated menu system */
+.site-nav,
+.site-nav__list,
+.site-nav__toggle,
+.site-nav__menu,
+.site-nav__panel,
+.site-nav__sheet,
+.site-nav__button { display: none !important; }
+
+/* Mobile dropdown: centered sheet */
+@media (max-width:760px){
+  #primaryNav {
+    /* mobile panel */
+    position: fixed;
+    top: calc(var(--header-h,64px) + 8px);
+    left: 50%;
+    transform: translateX(-50%) scaleY(0);
+    transform-origin: top center;
+    width: min(92vw, 420px);
+    max-height: calc(100vh - 96px);
+    overflow:auto;
+    background: var(--color-card);
+    border: 1px solid var(--color-border);
+    border-radius: 14px;
+    box-shadow: 0 12px 30px rgba(0,0,0,.15);
+    padding: .5rem;
+    opacity: 0;
+    transition: transform .18s ease-out, opacity .18s ease-out;
+  }
+  #primaryNav.is-open { transform: translateX(-50%) scaleY(1); opacity: 1; }
+  #primaryNav .nav-list { display:flex; flex-direction:column; gap:.6rem; margin:0; padding:0; list-style:none; }
+  #primaryNav a { display:block; text-align:center; padding:.75rem 1rem; }
+}
+
+/* Desktop: force inline menu and hide burger */
+@media (min-width:761px){
+  #primaryNav {
+    position: static !important;
+    transform: none !important;
+    opacity: 1 !important;
+    width: auto !important;
+    max-height: none !important;
+    padding: 0 !important;
+    border: 0 !important;
+    box-shadow: none !important;
+    background: transparent !important;
+    display: flex !important;
+    align-items: center;
+    gap: 1rem;
+  }
+  #primaryNav .nav-list{
+    display:flex !important;
+    flex-direction: row !important;
+    flex-wrap: wrap;
+    gap: 1rem !important;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  /* hide any burger buttons on desktop */
+  #navToggle,
+  .nav-toggle,
+  .site-nav__toggle,
+  .site-nav__button { display:none !important; }
+}
+
+/* Dark surface of the mobile sheet */
+[data-theme="dark"] #primaryNav {
+  background: #151515;
+  border-color: rgba(255,255,255,.08);
+}
+/* === Dark mode hamburger color (plum) === */
+:root{
+  --hamburger-dark: #a78bfa;   /* plum purple */
+  --hamburger-dark-hover: #c4b5fd;
+}
+
+/* mobile toggle button itself */
+[data-theme="dark"] #navToggle{
+  color: var(--hamburger-dark);                 /* bars use currentColor */
+  border-color: rgba(167,139,250,.35);          /* subtle ring */
+  background: rgba(167,139,250,.08);            /* soft pill bg */
+}
+
+/* hover / focus */
+[data-theme="dark"] #navToggle:hover{
+  background: rgba(167,139,250,.18);
+  color: var(--hamburger-dark-hover);
+}
+[data-theme="dark"] #navToggle:focus-visible{
+  outline: 2px solid var(--hamburger-dark);
+  outline-offset: 2px;
+}
+
+/* ensure the bars don’t get dimmed */
+[data-theme="dark"] .nav-toggle__bars{
+  opacity: 1;
+}
