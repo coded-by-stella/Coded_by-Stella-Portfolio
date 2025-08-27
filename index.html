@@ -14,39 +14,47 @@
 </head>
 
 <body>
-   <!-- Header -->
-<header class="section section--panel site-header">
+  <header class="section section--panel site-header">
   <div class="container">
     <div class="grid" style="align-items:center; grid-template-columns: 1fr auto;">
       <h1 class="m-0">Coded_by_Stella</h1>
 
-      <div class="site-actions">
-        <!-- Mobile nav: toggle -->
-        <button class="nav-toggle" id="navToggle" type="button"
-                aria-label="Open menu" aria-expanded="false" aria-controls="primaryNav">
-          <span class="nav-toggle__bars" aria-hidden="true"></span>
+      <!-- paste this whole nav -->
+      <nav class="site-nav" aria-label="Primary">
+        <button id="menuToggle" class="site-nav__toggle" aria-expanded="false" aria-controls="primaryMenu" aria-label="Open menu">
+          <span class="site-nav__bar" aria-hidden="true"></span>
+          <span class="site-nav__bar" aria-hidden="true"></span>
+          <span class="site-nav__bar" aria-hidden="true"></span>
+          <span class="sr-only">Menu</span>
         </button>
 
-        <!-- Primary nav -->
-        <nav id="primaryNav" class="primary-nav" aria-label="Primary">
-          <ul class="m-0" style="display:flex; gap: 1rem; list-style:none; padding:0; margin-right:.5rem;">
-            <li><a href="index.html">About Stella</a></li>
-            <li><a href="certifications.html">Certificates</a></li>
-            <li><a href="marketing-courses.html">Marketing Training</a></li>
-            <li><a href="projects.html">Portfolio</a></li>
-            <li><a href="contact.html">Contact me</a></li>
-          </ul>
+        <ul class="site-nav__list">
+          <li><a href="index.html">About Stella</a></li>
+          <li><a href="certifications.html">Certificates</a></li>
+          <li><a href="marketing-courses.html">Marketing Training</a></li>
+          <li><a href="projects.html">Portfolio</a></li>
+          <li><a href="contact.html">Contact me</a></li>
+        </ul>
 
-          <!-- Theme toggle -->
-          <button id="themeToggle" class="theme-toggle" type="button" aria-label="Switch theme" aria-pressed="false">
-            <span class="theme-toggle__icon" aria-hidden="true">🌙</span>
-            <span class="theme-toggle__text">Dark</span>
-          </button>
-        </nav>
-      </div>
+        <!-- keep theme toggle here -->
+        <button id="themeToggle" class="theme-toggle" type="button" aria-label="Switch theme" aria-pressed="false">
+          <span class="theme-toggle__icon" aria-hidden="true">🌙</span>
+          <span class="theme-toggle__text">Dark</span>
+        </button>
+
+        <!-- mobile panel -->
+        <ul id="primaryMenu" class="site-nav__menu" hidden>
+          <li><a href="index.html">About Stella</a></li>
+          <li><a href="certifications.html">Certificates</a></li>
+          <li><a href="marketing-courses.html">Marketing Training</a></li>
+          <li><a href="projects.html">Portfolio</a></li>
+          <li><a href="contact.html">Contact me</a></li>
+        </ul>
+      </nav>
     </div>
   </div>
 </header>
+
 
 
   <!-- Main -->

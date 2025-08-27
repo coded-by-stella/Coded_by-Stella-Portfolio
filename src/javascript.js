@@ -134,3 +134,40 @@
   const mq = window.matchMedia('(min-width: 761px)');
   mq.addEventListener?.('change', () => close());
 })();
+
+// mobile nav toggle
+(() => {
+  const btn = document.getElementById('menuToggle');     // toggle button
+  const panel = document.getElementById('primaryMenu');  // mobile menu panel
+  if (!btn || !panel) return;
+
+  const open = () => {
+    panel.hidden = false;
+    document.body.classList.add('nav-open');             // lock scroll (CSS)
+    btn.setAttribute('aria-expanded', 'true');
+  };
+
+  const close = () => {
+    panel.hidden = true;
+    document.body.classList.remove('nav-open');
+    btn.setAttribute('aria-expanded', 'false');
+  };
+
+  const isOpen = () => !panel.hidden;
+
+  btn.addEventListener('click', () => {                  // toggle on click
+    isOpen() ? close() : open();
+  });
+
+  document.addEventListener('keydown', (e) => {          // close on Esc
+    if (e.key === 'Escape' && isOpen()) close();
+  });
+
+  document.addEventListener('click', (e) => {            // close on outside click
+    if (isOpen() && !panel.contains(e.target) && !btn.contains(e.target)) close();
+  });
+
+  const mql = window.matchMedia('(min-width: 768px)');   // reset on resize >= 768px
+  const handle = () => { if (mql.matches) close(); };
+  mql.addEventListener ? mql.addEventListener('change', handle) : mql.addListener(handle);
+})();

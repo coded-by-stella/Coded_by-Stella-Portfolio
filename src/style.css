@@ -712,3 +712,79 @@ blockquote{ margin:.5rem auto; font-style:italic; opacity:.9; }
 
 /* Active link */
 .is-active{ text-decoration:underline; text-underline-offset:4px; }
+
+/* --- Desktop nav --- */
+.site-nav { display: flex; align-items: center; gap: 1rem; }
+.site-nav__list { display: flex; gap: 1rem; list-style: none; margin: 0; padding: 0; }
+.site-nav__list a { text-decoration: none; }
+
+/* --- Hamburger (hidden on desktop) --- */
+.site-nav__toggle { /* button reset + layout */
+  display: none; border: 0; background: transparent; padding: .25rem; cursor: pointer;
+}
+.site-nav__bar { /* 3 bars */
+  display: block; width: 24px; height: 2px; margin: 5px 0; background: currentColor; border-radius: 2px;
+}
+
+/* --- Mobile styles --- */
+@media (max-width: 768px) {
+  /* header alignment */
+  .site-nav { gap: .5rem; }
+
+  /* hide desktop list */
+  .site-nav__list { display: none; }
+
+  /* show hamburger */
+  .site-nav__toggle { display: inline-flex; align-items: center; justify-content: center; }
+
+  /* mobile panel (centered) */
+  .site-nav__menu {
+    /* positioning */
+    position: fixed; /* anchor to viewport */
+    top: calc(var(--header-h, 64px) + 8px); /* 8px offset under header */
+    left: 50%; transform: translateX(-50%) scaleY(0);
+    transform-origin: top center;
+    z-index: 1000;
+
+    /* sizing */
+    width: min(92vw, 420px); /* centered sheet */
+    max-height: calc(100vh - 96px);
+    overflow: auto;
+    box-sizing: border-box;
+
+    /* box */
+    margin: 0; padding: .5rem;
+    list-style: none;
+    background: var(--panel, #fff);
+    border: 1px solid rgba(0,0,0,.08);
+    border-radius: 14px;
+    box-shadow: 0 12px 30px rgba(0,0,0,.12);
+
+    /* reveal */
+    transition: transform .18s ease-out, opacity .18s ease-out;
+    opacity: 0;
+  }
+  .site-nav__menu.is-open {
+    transform: translateX(-50%) scaleY(1);
+    opacity: 1;
+  }
+
+  /* links in panel */
+  .site-nav__menu a {
+    display: block; padding: .75rem 1rem; text-align: center; text-decoration: none;
+  }
+
+  /* prevent body shift on open */
+  body.menu-open { overflow: hidden; }
+
+  /* dark mode surface (optional) */
+  [data-theme="dark"] .site-nav__menu {
+    background: #151515; border-color: rgba(255,255,255,.08);
+  }
+}
+
+/* --- Utility: visually hidden text for a11y --- */
+.sr-only {
+  position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden;
+  clip: rect(0, 0, 1px, 1px); white-space: nowrap; border: 0;
+}
