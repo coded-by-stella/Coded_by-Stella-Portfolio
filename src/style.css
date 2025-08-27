@@ -788,3 +788,55 @@ blockquote{ margin:.5rem auto; font-style:italic; opacity:.9; }
   position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden;
   clip: rect(0, 0, 1px, 1px); white-space: nowrap; border: 0;
 }
+
+/* --- Site nav (mobile-first) --- */
+.site-nav { display: flex; align-items: center; gap: 1rem; }
+
+/* desktop list hidden by default on small screens */
+.site-nav__list { display: none; gap: 1rem; list-style: none; margin: 0; padding: 0; }
+
+/* hamburger button visible on small screens */
+.site-nav__button { 
+  display: inline-flex; align-items: center; justify-content: center;
+  width: 44px; height: 44px; border: 0; background: transparent; font-size: 1.25rem;
+}
+
+/* lock scroll when overlay is open */
+body.nav-open { overflow: hidden; }
+
+/* overlay hidden helper */
+.site-nav__panel[hidden] { display: none !important; }
+
+/* full-screen overlay */
+.site-nav__panel {
+  position: fixed; inset: 0; z-index: 9999;
+  display: flex; align-items: center; justify-content: center;
+  background: rgba(0,0,0,.55);
+}
+
+/* centered sheet */
+.site-nav__sheet {
+  background: var(--surface, #fff);
+  color: inherit;
+  width: min(92vw, 480px);
+  padding: 1.25rem;
+  border-radius: 18px;
+  box-shadow: 0 12px 30px rgba(0,0,0,.25);
+}
+
+/* mobile list */
+.site-nav__sheet ul { 
+  list-style: none; margin: 0; padding: 0;
+  display: flex; flex-direction: column; gap: .5rem; text-align: center;
+}
+
+.site-nav__sheet a { display: block; padding: .85rem 1rem; }
+
+/* light/dark fallback */
+:root[data-theme="dark"] .site-nav__sheet { background: #121212; }
+
+/* >=768px: show desktop list, hide hamburger + overlay */
+@media (min-width: 768px) {
+  .site-nav__list { display: flex; }
+  .site-nav__button, .site-nav__panel { display: none !important; }
+}
