@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Projects – Coded_by_Stella</title>
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+  <!-- Site CSS -->
+  <link rel="stylesheet" href="src/style.css" />
+
+  <meta name="description" content="Selected front-end projects by Stella Marrali: aviation dashboard, live weather app, and a UI micro-interactions recipe page." />
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="section section--panel site-header">
+    <div class="container">
+      <div class="grid" style="align-items:center; grid-template-columns: 1fr auto;">
+        <h1 class="m-0">Coded_by_Stella</h1>
+        <nav aria-label="Primary" style="display:flex; align-items:center; gap: 1rem;">
+          <ul class="m-0" style="display:flex; gap: 1rem; list-style:none; padding:0; margin-right:.5rem;">
+              <li><a href="index.html">About Stella</a></li>
+          <li><a href="certifications.html">Certificates</a></li>
+          <li><a href="marketing-courses.html">Marketing Training</a></li>
+          <li><a href="projects.html">Portfolio</a></li>
+          <li><a href="contact.html">Contact me</a></li>
+          </ul>
+
+          <!-- Theme toggle -->
+          <button id="themeToggle" class="theme-toggle" type="button" aria-label="Switch theme" aria-pressed="false">
+            <span class="theme-toggle__icon" aria-hidden="true">🌙</span>
+            <span class="theme-toggle__text">Dark</span>
+          </button>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main -->
+  <main class="section">
+    <div class="container">
+      <article class="content">
+        <h2 class="center">My Projects</h2>
+
+        <!-- Project 1 -->
+        <section class="card">
+          <h3>🚁 Flight Operations Center Dashboard</h3>
+          <p><em>Prototype Presentation — Front-End Web Development Demo for Aviation &amp; Emergency Response Systems</em></p>
+
+          <h4>Description</h4>
+          <p>Front-end prototype per il coordinamento di missioni aeree e antincendio, con interfaccia di mission control integrata.</p>
+
+          <h4>Key Features</h4>
+          <ul>
+            <li><strong>Mission Management:</strong> aggiunta, modifica e tracking (Active, Standby, Resolved).</li>
+            <li><strong>Geospatial Visualization:</strong> mappa interattiva (Leaflet.js) con marker personalizzati (🔥, 🚁, 🟠, 🟢).</li>
+            <li><strong>Weather Integration:</strong> struttura pronta per dati meteo utili a pianificazione e risk assessment.</li>
+            <li><strong>Crew &amp; Aircraft Assignment:</strong> quick-pick per assegnare elicotteri ed equipaggi.</li>
+            <li><strong>Operational Timeline:</strong> orari di inizio/fine missione per scheduling e allocazione risorse.</li>
+            <li><strong>UI/UX Focus:</strong> interfaccia chiara, pilot-friendly, in vanilla HTML/CSS/JS.</li>
+          </ul>
+
+          <h4>Technologies</h4>
+          <p>HTML · CSS · JavaScript</p>
+
+          <p class="center" style="margin-top:1rem;">
+            <a class="btn" href="https://coded-by-stella.github.io/Flight-Operations-Center-Dashboard/" target="_blank" rel="noreferrer noopener">View live demo</a>
+          </p>
+        </section>
+
+        <!-- Project 2 -->
+        <section class="card">
+          <h3>⛅ Live Weather App</h3>
+          <p><em>Prototype Presentation — Front-End Web Development Demo for Weather &amp; Geolocation</em></p>
+
+          <h4>Description</h4>
+          <p>App meteo leggera e responsive con UI accessibile e geolocalizzazione.</p>
+
+          <h4>Key Features</h4>
+          <ul>
+            <li><strong>City Search &amp; Geolocation:</strong> ricerca con suggerimenti + geolocalizzazione nativa.</li>
+            <li><strong>Live Conditions:</strong> temperatura, feels like, vento, umidità, precipitazioni, qualità aria (US AQI).</li>
+            <li><strong>5-Day Forecast:</strong> card giornaliere con min/max, vento, alba/tramonto, precipitazioni.</li>
+            <li><strong>Hourly Trend:</strong> sparkline delle prossime 24 ore.</li>
+            <li><strong>Dynamic Background:</strong> gradienti animati in base al meteo.</li>
+            <li><strong>UX Utilities:</strong> toggle unità (°C/°F, km/h/kt), tema light/dark con persistenza.</li>
+            <li><strong>Accessibility &amp; Performance:</strong> ruoli ARIA, contrasti ottimizzati, vanilla stack.</li>
+          </ul>
+
+          <h4>Technologies</h4>
+          <p>HTML · CSS · JavaScript · Open-Meteo API</p>
+
+          <p class="center" style="margin-top:1rem;">
+            <a class="btn" href="https://coded-by-stella.github.io/Coded_by_Stella---Weather-App/" target="_blank" rel="noreferrer noopener">View live demo</a>
+          </p>
+        </section>
+
+        <!-- Project 3 -->
+        <section class="card">
+          <h3>🍉 Summer Recipe — SheCodes Challenge</h3>
+          <p><em>Prototype Presentation — UI Components &amp; Micro-Interactions</em></p>
+
+          <h4>Description</h4>
+          <p>Landing page desktop-only focalizzata su polish visivo e micro-interazioni.</p>
+
+          <h4>Key Features</h4>
+          <ul>
+            <li><strong>Branding &amp; Styling:</strong> gradienti, tipografia decisa, palette bilanciata.</li>
+            <li><strong>Micro-interactions:</strong> pulsante CTA animato con hover states.</li>
+            <li><strong>Responsive Foundations:</strong> codice leggero e facilmente adattabile.</li>
+            <li><strong>Semantic &amp; Accessible:</strong> HTML/CSS leggibili e mantenibili.</li>
+            <li><strong>Vanilla JS Enhancements:</strong> interazioni del bottone e dinamiche base.</li>
+          </ul>
+
+          <h4>Technologies</h4>
+          <p>HTML · CSS · JavaScript</p>
+
+          <p class="center" style="margin-top:1rem;">
+            <a class="btn" href="https://www.shecodes.io/contests/tasty-summer-recipe-challenge/contest_entries/stella-marrali-italian/preview" target="_blank" rel="noreferrer noopener">View live demo</a>
+          </p>
+        </section>
+
+        <p class="center" style="margin-top:2rem;">
+          <a class="btn" href="./index.html" target="_self" rel="noopener">← Back to Portfolio</a>
+        </p>
+      </article>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="section section--panel">
+    <div class="container">
+      <div class="grid" style="align-items:center; grid-template-columns: 1fr auto;">
+        <p class="m-0 social-inline">
+          <a href="https://www.linkedin.com/in/stella-marrali-60408a162/" target="_blank" rel="noreferrer noopener">LinkedIn</a>
+          <a href="https://www.instagram.com/coded_by_stella/" target="_blank" rel="noreferrer noopener">Instagram</a>
+          <a href="mailto:stella.marrali.no@gmail.com">Email</a>
+        </p>
+      </div>
+      <p class="center footnote">
+        © <span id="year"></span> — This website was designed &amp; developed with ❤️ by Stella
+      </p>
+    </div>
+  </footer>
+
+  <!-- JS -->
+  <script src="src/javascript.js" defer></script>
+</body>
+</html>
+

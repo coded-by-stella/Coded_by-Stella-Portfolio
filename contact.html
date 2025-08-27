@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Contact – Coded_by_Stella</title>
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+  <!-- Site CSS -->
+  <link rel="stylesheet" href="src/style.css" />
+
+  <meta name="description" content="Contact Stella Marrali — front-end development + marketing. Collaborations, roles, and project inquiries." />
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="section section--panel site-header">
+    <div class="container">
+      <div class="grid" style="align-items:center; grid-template-columns: 1fr auto;">
+        <h1 class="m-0">Coded_by_Stella</h1>
+        <nav aria-label="Primary" style="display:flex; align-items:center; gap: 1rem;">
+          <ul class="m-0" style="display:flex; gap: 1rem; list-style:none; padding:0; margin-right:.5rem;">
+              <li><a href="index.html">About Stella</a></li>
+          <li><a href="certifications.html">Certificates</a></li>
+          <li><a href="marketing-courses.html">Marketing Training</a></li>
+          <li><a href="projects.html">Portfolio</a></li>
+          <li><a href="contact.html">Contact me</a></li>
+          </ul>
+
+          <!-- Theme toggle -->
+          <button id="themeToggle" class="theme-toggle" type="button" aria-label="Switch theme" aria-pressed="false">
+            <span class="theme-toggle__icon" aria-hidden="true">🌙</span>
+            <span class="theme-toggle__text">Dark</span>
+          </button>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main -->
+  <main class="section">
+    <div class="container">
+      <article class="content">
+        <h2 class="center">Get in touch!</h2>
+
+        <!-- Intro -->
+        <section class="card stack">
+          <h3>Let’s build something amazing together</h3>
+          <p>I’m open to collaborations and opportunities in front-end development and digital marketing support — remote or hybrid.</p>
+        </section>
+
+        <!-- Direct links -->
+        <section class="card stack">
+          <h3>Direct Links</h3>
+          <p class="social-inline" style="display:flex; flex-wrap:wrap; gap:.75rem;">
+            📧 <a href="mailto:stella.marrali.no@gmail.com" target="_blank" rel="noreferrer noopener">stella.marrali.no@gmail.com</a>
+            <span aria-hidden="true">•</span>
+            💼 <a href="https://www.linkedin.com/in/stella-marrali-60408a162/" target="_blank" rel="noreferrer noopener">LinkedIn</a>
+            <span aria-hidden="true">•</span>
+            📸 <a href="https://www.instagram.com/coded_by_stella/" target="_blank" rel="noreferrer noopener">Instagram</a>
+          </p>
+        </section>
+
+        <!-- Success message (shown after redirect) -->
+        <div id="formSuccess" class="card" style="display:none;" role="status" aria-live="polite">
+          <p class="m-0"><strong>Thank you!</strong> Your message has been sent. I’ll get back to you soon.</p>
+        </div>
+
+        <!-- Contact form -->
+        <section class="card">
+          <h3>Send a message</h3>
+
+          <!--
+            Form options:
+            - FormSubmit (default): replace the email below if needed.
+            - Works with Netlify too: keep name="contact" and the hidden 'form-name' input if you deploy on Netlify.
+          -->
+          <form
+            name="contact"
+            method="POST"
+            action="https://formsubmit.co/stella.marrali.no@gmail.com"
+            data-netlify="true"
+            netlify-honeypot="bot-field"
+            class="stack"
+          >
+            <!-- Netlify needs this -->
+            <input type="hidden" name="form-name" value="contact" />
+            <!-- FormSubmit options -->
+            <input type="hidden" name="_subject" value="[Coded_by_Stella] New contact form message" />
+            <input type="hidden" name="_template" value="table" />
+            <!-- Redirect back with a flag so we can show a success message -->
+            <input type="hidden" name="_next" value="contact.html?sent=1" />
+            <!-- Disable FormSubmit captcha (optional) -->
+            <input type="hidden" name="_captcha" value="false" />
+            <!-- Honeypot -->
+            <p style="display:none;">
+              <label>Don’t fill this out if you’re human: <input name="bot-field" /></label>
+            </p>
+
+            <div class="grid" style="grid-template-columns: 1fr 1fr; gap: .75rem;">
+              <div class="stack">
+                <label for="name"><strong>Name</strong></label>
+                <input id="name" name="name" type="text" autocomplete="name" required />
+              </div>
+
+              <div class="stack">
+                <label for="email"><strong>Email</strong></label>
+                <input id="email" name="email" type="email" autocomplete="email" required />
+              </div>
+            </div>
+
+            <div class="stack">
+              <label for="message"><strong>Message</strong></label>
+              <textarea id="message" name="message" rows="6" required></textarea>
+            </div>
+
+            <div class="center">
+              <button class="btn" type="submit">Send message</button>
+            </div>
+          </form>
+        </section>
+
+        <p class="center" style="margin-top:2rem;">
+          <a class="btn" href="./index.html" target="_self" rel="noopener">← Back to Portfolio</a>
+        </p>
+      </article>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="section section--panel">
+    <div class="container">
+      <div class="grid" style="align-items:center; grid-template-columns: 1fr auto;">
+        <p class="m-0 social-inline">
+          <a href="https://www.linkedin.com/in/stella-marrali-60408a162/" target="_blank" rel="noreferrer noopener">LinkedIn</a>
+          <a href="https://www.instagram.com/coded_by_stella/" target="_blank" rel="noreferrer noopener">Instagram</a>
+          <a href="mailto:stella.marrali.no@gmail.com">Email</a>
+        </p>
+      </div>
+      <p class="center footnote">
+        © <span id="year"></span> — This website was designed &amp; developed with ❤️ by Stella
+      </p>
+    </div>
+  </footer>
+
+  <!-- Shared JS -->
+  <script src="src/javascript.js" defer></script>
+
+  <!-- Contact-page helper: show success banner if redirected with ?sent=1 -->
+  <script>
+    (function () {
+      try {
+        const qs = new URLSearchParams(location.search);
+        if (qs.get("sent") === "1") {
+          const el = document.getElementById("formSuccess");
+          if (el) el.style.display = "block";
+          // Clean the URL (no ?sent=1) without reloading
+          if (history.replaceState) {
+            const clean = location.pathname + location.hash;
+            history.replaceState(null, "", clean);
+          }
+        }
+      } catch (e) {}
+    })();
+  </script>
+</body>
+</html>
