@@ -111,3 +111,22 @@
   const mq = window.matchMedia('(min-width: 761px)');
   mq.addEventListener?.('change', () => close());
 })();
+// Desktop reset for mobile menu state
+(() => {
+  const nav = document.getElementById('primaryNav');
+  const btn = document.getElementById('navToggle');
+  const mq  = window.matchMedia('(min-width: 761px)');
+
+  const hardReset = () => {
+    if (!nav) return;
+    if (mq.matches) {
+      nav.classList.remove('is-open');
+      document.body.classList.remove('menu-open');
+      if (btn) btn.setAttribute('aria-expanded','false');
+    }
+  };
+
+  // run now and on resize up
+  hardReset();
+  mq.addEventListener?.('change', hardReset);
+})();
