@@ -56,12 +56,13 @@
 .logo-icon {
   width: 28px;
   height: 28px;
+  text-align: center; 
 }
 
 .site-logo {
   width: 150px;   
   height: auto;  
-  text-align: center; 
+  
 }
 
 
