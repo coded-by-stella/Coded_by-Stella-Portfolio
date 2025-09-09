@@ -47,11 +47,15 @@
   --pad-x:clamp(16px, 4vw, 28px);
 }
 
+.site-title {
+  display: flex;
+  align-items: center;  /* centra logo e testo verticalmente */
+  gap: 8px;             /* spazio tra logo e testo */
+}
+
 .logo-icon {
-  width: 24px;       /* dimensione piccola, tipo emoji */
-  height: 24px;
-  vertical-align: middle; /* lo allinea col testo */
-  margin-right: 8px; /* spazio tra logo e titolo */
+  width: 28px;
+  height: 28px;
 }
 
 
