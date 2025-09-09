@@ -49,8 +49,8 @@
 
 .site-title {
   display: flex;
-  align-items: center;  /* centra logo e testo verticalmente */
-  gap: 8px;             /* spazio tra logo e testo */
+  align-items: center;  
+  gap: 8px;             
 }
 
 .logo-icon {
@@ -59,8 +59,9 @@
 }
 
 .site-logo {
-  width: 150px;   /* puoi modificare la misura */
-  height: auto;   /* mantiene le proporzioni */
+  width: 150px;   
+  height: auto;  
+  text-align: center; 
 }
 
 
