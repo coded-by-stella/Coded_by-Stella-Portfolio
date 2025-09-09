@@ -58,6 +58,11 @@
   height: 28px;
 }
 
+.site-logo {
+  width: 150px;   /* puoi modificare la misura */
+  height: auto;   /* mantiene le proporzioni */
+}
+
 
 html[data-theme="dark"]{
   --bg-1:#0a0a0a;
