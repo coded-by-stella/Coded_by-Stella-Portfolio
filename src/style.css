@@ -49,21 +49,18 @@
 
 .site-title {
   display: flex;
-  align-items: center;  
-  gap: 8px;             
+  justify-content: center;  
+  align-items: center;       
+  gap: 12px;                 
+  text-align: center;
 }
 
-.logo-icon {
-  width: 28px;
-  height: 28px;
-  text-align: center; 
-}
-
+.logo-icon, 
 .site-logo {
-  width: 150px;   
-  height: auto;  
-  
+  width: 200px;   
+  height: auto;   
 }
+
 
 
 html[data-theme="dark"]{
