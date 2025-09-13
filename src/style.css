@@ -412,3 +412,80 @@ footer .grid{ display:grid; grid-template-columns:1fr auto; align-items:center; 
 [data-theme="dark"] .nav-toggle__bars{
   opacity: 1;
 }
+
+/* === Header layout override: logo top-left, nav on its own centered row === */
+
+/* 1) Mettiamo la griglia dell'header su una sola colonna (titolo sopra, nav sotto) */
+.site-header .grid--header{
+  grid-template-columns: 1fr !important;
+  align-items: start;
+  row-gap: 10px;
+}
+
+/* 2) Headline/Logo allineati a sinistra (prima erano centrati) */
+.site-header .site-title{
+  justify-content: flex-start;   /* prima: center */
+  align-items: center;
+}
+
+/* 3) Il nav va su una nuova riga e lo centriamo */
+#primaryNav{
+  width: 100%;
+  display: flex !important;
+  justify-content: center;       /* centra l'intera lista */
+}
+
+/* 4) La lista dentro al nav rimane in linea e centrata */
+#primaryNav .nav-list{
+  margin: 0 auto;                /* sicurezza: centro */
+  justify-content: center;
+}
+
+/* 5) Un filo di spazio e un divisore leggero tra headline e nav (opzionale) */
+.site-header .primary-nav{
+  padding-top: .25rem;
+  border-top: 1px solid var(--header-bd);
+}
+
+/* 6) Burger: nessun cambiamento – su mobile rimane quello "a foglio" centrato */
+@media (max-width:760px){
+  /* già gestito dalle tue regole; lasciamo invariato */
+}
+/* === Header layout override: logo top-left, nav on its own centered row === */
+
+/* 1) Mettiamo la griglia dell'header su una sola colonna (titolo sopra, nav sotto) */
+.site-header .grid--header{
+  grid-template-columns: 1fr !important;
+  align-items: start;
+  row-gap: 10px;
+}
+
+/* 2) Headline/Logo allineati a sinistra (prima erano centrati) */
+.site-header .site-title{
+  justify-content: flex-start;   /* prima: center */
+  align-items: center;
+}
+
+/* 3) Il nav va su una nuova riga e lo centriamo */
+#primaryNav{
+  width: 100%;
+  display: flex !important;
+  justify-content: center;       /* centra l'intera lista */
+}
+
+/* 4) La lista dentro al nav rimane in linea e centrata */
+#primaryNav .nav-list{
+  margin: 0 auto;                /* sicurezza: centro */
+  justify-content: center;
+}
+
+/* 5) Un filo di spazio e un divisore leggero tra headline e nav (opzionale) */
+.site-header .primary-nav{
+  padding-top: .25rem;
+  border-top: 1px solid var(--header-bd);
+}
+
+/* 6) Burger: nessun cambiamento – su mobile rimane quello "a foglio" centrato */
+@media (max-width:760px){
+  /* già gestito dalle tue regole; lasciamo invariato */
+}
