@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Discovery Questionnaire – Coded_by_Stella</title>
+  <meta name="description" content="Answer these questions before our 40-minute discovery call so I can suggest the right package and price." />
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <!-- Site CSS (usa lo stesso del portfolio) -->
+  <link rel="stylesheet" href="src/style.css" />
+</head>
+<body>
+  <!-- Header -->
+  <header class="section section--panel site-header">
+    <div class="container">
+      <div class="grid grid--header">
+        <h1 class="site-title">
+          <img src="assets/favicon.ico" alt="Coded_by_Stella logo" class="logo-icon">
+          Coded_by_Stella
+        </h1>
+
+        <!-- Mobile burger -->
+        <button id="navToggle" class="nav-toggle" aria-expanded="false" aria-controls="primaryNav" aria-label="Open menu">
+          <span class="sr-only">Menu</span>
+          <span class="nav-toggle__bars" aria-hidden="true"></span>
+        </button>
+
+        <!-- Single primary nav -->
+        <nav id="primaryNav" class="primary-nav" aria-label="Primary">
+          <ul class="nav-list">
+            <li><a href="index.html">About Stella</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="certifications.html">Certificates</a></li>
+          <li><a href="marketing-courses.html">Marketing Training</a></li>
+          <li><a href="projects.html">Portfolio</a></li>
+          <li><a href="contact.html">Contact me</a></li>
+          </ul>
+
+          <!-- Theme toggle -->
+          <button id="themeToggle" class="theme-toggle" type="button" aria-label="Switch theme" aria-pressed="false">
+            <span class="theme-toggle__icon" aria-hidden="true">🌙</span>
+            <span class="theme-toggle__text">Dark</span>
+          </button>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <a class="sr-only sr-only-focusable" href="#main">Skip to content</a>
+
+  <main id="main">
+    <!-- Hero -->
+    <section class="section">
+      <div class="container content center">
+        <h1>Discovery Questionnaire</h1>
+        <p>Fill this in before our <strong>40-minute call</strong>. It helps me understand your business, choose the best package, and set a fair price for your needs.</p>
+      </div>
+    </section>
+
+    <!-- Form -->
+    <section class="section section--panel">
+      <div class="container">
+        <form
+          class="contact-form box content"
+          action="https://formspree.io/f/your-id"  
+          method="POST"
+          enctype="multipart/form-data"
+          aria-labelledby="discovery-title"
+        >
+          <h2 id="discovery-title" class="center">Tell me about your business</h2>
+
+          <!-- Essentials -->
+          <label>
+            <span>Company / Brand name *</span>
+            <input type="text" name="company" placeholder="ACME Studio" required />
+          </label>
+
+          <label>
+            <span>Website / Social link</span>
+            <input type="url" name="website" placeholder="https://your-site.com" />
+          </label>
+
+          <div class="grid grid--auto">
+            <label>
+              <span>Your name *</span>
+              <input type="text" name="contact_name" placeholder="Jane Doe" required />
+            </label>
+            <label>
+              <span>Your role *</span>
+              <input type="text" name="contact_role" placeholder="Founder / Owner / Marketing" required />
+            </label>
+          </div>
+
+          <div class="grid grid--auto">
+            <label>
+              <span>Email *</span>
+              <input type="email" name="email" placeholder="you@example.com" required />
+            </label>
+            <label>
+              <span>Phone / WhatsApp (optional)</span>
+              <input type="tel" name="phone" placeholder="+47 ..." />
+            </label>
+          </div>
+
+          <hr>
+
+          <!-- Q1 -->
+          <label>
+            <span>1) What type of business is this? (industry, niche, products/services) *</span>
+            <textarea name="q1_business_type" placeholder="e.g., Dental clinic in Oslo, aesthetic treatments; or SaaS for time tracking…" required></textarea>
+          </label>
+
+          <!-- Q2 -->
+          <label>
+            <span>2) Top 3 goals for the next 90 days *</span>
+            <textarea name="q2_goals" placeholder="e.g., +30% leads, new service launch, fix website speed…" required></textarea>
+          </label>
+
+          <!-- Q3 -->
+          <label>
+            <span>3) What’s blocking you right now? (main problems, fears, bottlenecks) *</span>
+            <textarea name="q3_challenges" placeholder="e.g., no clear message, low conversions, no time to update site…" required></textarea>
+          </label>
+
+          <!-- Q4 -->
+          <label>
+            <span>4) Who is your target customer? Which problems/desires do you solve? *</span>
+            <textarea name="q4_target" placeholder="e.g., SMB owners who need more bookings; we solve lack of visibility and trust…" required></textarea>
+          </label>
+
+          <!-- Q5 -->
+          <label>
+            <span>5) Why should clients choose you vs competitors? (your positioning) *</span>
+            <textarea name="q5_positioning" placeholder="e.g., faster delivery, better service, unique method, price/value…" required></textarea>
+          </label>
+
+          <hr>
+
+          <!-- Q6 -->
+          <label>
+            <span>6) Your top 3 competitors (names + links) *</span>
+            <textarea name="q6_competitors" placeholder="1) … 2) … 3) …" required></textarea>
+          </label>
+
+          <!-- Q7 -->
+          <label>
+            <span>7) Assets you already have (logo, brand kit, palette, photos, reviews, email list size) *</span>
+            <textarea name="q7_assets" placeholder="e.g., logo + colors, 25 reviews (4.8★), 1k email list…" required></textarea>
+          </label>
+
+          <!-- Optional uploads  -->
+          <div class="grid grid--auto">
+            <label>
+              <span>Upload logo / brand kit (optional)</span>
+              <input type="file" name="brand_files" accept=".png,.jpg,.jpeg,.svg,.pdf" />
+            </label>
+            <label>
+              <span>Upload any reference file (optional)</span>
+              <input type="file" name="ref_files" accept=".png,.jpg,.jpeg,.pdf" />
+            </label>
+          </div>
+
+          <hr>
+
+          <!-- Q8 Budget -->
+          <fieldset>
+            <legend>8) Budget range planned *</legend>
+            <div class="grid grid--auto">
+              <label><input type="radio" name="budget" value="<€1000" required /> &lt; €1,000</label>
+              <label><input type="radio" name="budget" value="€1k–€2k" /> €1,000–€2,000</label>
+              <label><input type="radio" name="budget" value="€2k–€3k" /> €2,000–€3,000</label>
+              <label><input type="radio" name="budget" value="€3k–€5k" /> €3,000–€5,000</label>
+              <label><input type="radio" name="budget" value=">€5k" /> &gt; €5,000</label>
+            </div>
+          </fieldset>
+
+          <!-- Q9 Timeline -->
+          <label>
+            <span>9) Ideal timeline / deadline *</span>
+            <input type="text" name="timeline" placeholder="e.g., launch in 4–6 weeks / by Nov 20" required />
+          </label>
+
+          <!-- Q10 Package preference -->
+          <fieldset>
+            <legend>10) Which sounds closer to what you need? *</legend>
+            <div class="grid grid--auto">
+              <label><input type="radio" name="package" value="Starter" required /> Starter</label>
+              <label><input type="radio" name="package" value="Pro" /> Pro</label>
+              <label><input type="radio" name="package" value="Premium" /> Premium</label>
+              <label><input type="radio" name="package" value="Portfolio" /> Portfolio Website</label>
+              <label><input type="radio" name="package" value="Landing" /> One-Page Landing</label>
+              <label><input type="radio" name="package" value="Local" /> Local Business Booster</label>
+              <label><input type="radio" name="package" value="PersonalBrand" /> Personal Brand Website</label>
+              <label><input type="radio" name="package" value="Not sure" /> Not sure / Custom advice</label>
+            </div>
+          </fieldset>
+
+          <!-- Q11 Monthly plan -->
+          <fieldset>
+            <legend>11) Do you want monthly support (Monthly Growth Engine)? *</legend>
+            <label><input type="radio" name="monthly_growth_engine" value="Yes" required /> Yes, I’m interested</label>
+            <label><input type="radio" name="monthly_growth_engine" value="No" /> Not now</label>
+          </fieldset>
+
+          <!-- Q12 Decision maker + notes -->
+          <label>
+            <span>12) Who will make the final decision? Anything else I should know?</span>
+            <textarea name="decider_notes" placeholder="Name/role, constraints, special requests…"></textarea>
+          </label>
+
+          <hr>
+
+          <!-- Honeypot (antispam) -->
+          <div class="sr-only" aria-hidden="true">
+            <label>Leave this field empty
+              <input type="text" name="_gotcha" tabindex="-1" autocomplete="off" />
+            </label>
+          </div>
+
+          <!-- Hidden meta -->
+          <input type="hidden" name="form_name" value="discovery_questionnaire" />
+          <input type="hidden" name="source" value="discovery-page" />
+          <!-- opzionale: redirect Formspree -->
+          <!-- <input type="hidden" name="_redirect" value="https://portfolio-codedbystella.netlify.app/thanks.html" /> -->
+
+          <!-- Consent -->
+          <label>
+            <input type="checkbox" name="consent" value="ok" required />
+            <span>I agree to be contacted about my request and to a 40-minute discovery call.</span>
+          </label>
+
+          <button type="submit" class="btn">Send questionnaire</button>
+          <p class="footnote">I reply within 24h. No spam. This form only helps us choose the best package and a fair price for your needs.</p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="section section--panel">
+    <div class="container">
+      <div class="grid" style="align-items:center; grid-template-columns: 1fr auto;">
+        <p class="m-0 social-inline">
+          <a href="https://www.linkedin.com/in/coded-by-stella-3b3528384/" target="_blank" rel="noreferrer noopener">LinkedIn</a>
+          <a href="https://www.instagram.com/coded_by_stella/" target="_blank" rel="noreferrer noopener">Instagram</a>
+          <a href="mailto:stella.marrali.no@gmail.com">Email</a>
+        </p>
+      </div>
+      <p class="center footnote">© <span id="year"></span> — Designed &amp; developed with ❤️ by Stella</p>
+    </div>
+  </footer>
+
+  <!-- JS -->
+  <script src="src/javascript.js" defer></script>
+  <script>
+    // footer year fallback
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    
+    (function(){
+      const params = new URLSearchParams(window.location.search);
+      const p = (params.get('package') || '').toLowerCase();
+      const map = {
+        'starter':'Starter',
+        'pro':'Pro',
+        'premium':'Premium',
+        'portfolio':'Portfolio',
+        'landing':'One-Page Landing',
+        'local':'Local',
+        'personalbrand':'PersonalBrand'
+      };
+      if(map[p]){
+        const val = map[p];
+        const input = document.querySelector('input[name="package"][value="'+val+'"]');
+        if(input){ input.checked = true; }
+      }
+    })();
+  </script>
+</body>
+</html>

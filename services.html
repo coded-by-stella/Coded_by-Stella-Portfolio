@@ -15,16 +15,16 @@
 </head>
 <body>
 
- <!-- Header -->
+<!-- Header -->
 <header class="section section--panel site-header">
   <div class="container">
     <div class="grid grid--header">
       <h1 class="site-title">
-  <img src="assets/favicon.ico" alt="Logo" class="logo-icon">
-  Coded_by_Stella
-</h1>
+        <img src="assets/favicon.ico" alt="Coded_by_Stella logo" class="logo-icon">
+        Coded_by_Stella
+      </h1>
 
-   <!-- Mobile burger -->
+      <!-- Mobile burger -->
       <button id="navToggle" class="nav-toggle" aria-expanded="false" aria-controls="primaryNav" aria-label="Open menu">
         <span class="sr-only">Menu</span>
         <span class="nav-toggle__bars" aria-hidden="true"></span>
@@ -34,7 +34,7 @@
       <nav id="primaryNav" class="primary-nav" aria-label="Primary">
         <ul class="nav-list">
           <li><a href="index.html">About Stella</a></li>
-          <li><a href="services.html">Services</a></li>
+          <li><a href="services.html" class="is-active" aria-current="page">Services</a></li>
           <li><a href="certifications.html">Certificates</a></li>
           <li><a href="marketing-courses.html">Marketing Training</a></li>
           <li><a href="projects.html">Portfolio</a></li>
@@ -51,232 +51,581 @@
   </div>
 </header>
 
-  <!-- Main -->
-  <main class="section">
-    <div class="container">
-      <article class="content">
-        <h2 class="center">Web Development & Marketing Services</h2>
+<a class="sr-only sr-only-focusable" href="#main">Skip to content</a>
 
-<!-- Services -->
- <section class="section">
-      <div class="container content center">
-        <h1>Websites that grow your business</h1>
-        <p class="m-0">I build clean, fast websites and simple marketing systems that bring you more clients, not just pretty pages.</p>
-        <p><a href="#contact" class="btn" aria-label="Book a free 20 minute call">Book a Free 20-min Call</a></p>
+<!-- Main -->
+<main id="main" class="section">
+  <div class="container">
+    <article class="content">
+      <h2 class="center">Web Development & Marketing Services</h2>
 
-        <figure class="hero__figure" aria-hidden="true">
-          <img src="assets/hero-services.jpg" alt="" />
-        </figure>
-      </div>
-    </section>
+      <!-- Hero / Intro -->
+      <section class="section" aria-labelledby="hero-title">
+        <div class="container content center">
+          <h1 id="hero-title">Websites that grow your business</h1>
+          <p class="m-0">I build clean, fast websites and simple marketing systems that bring you more clients, not just pretty pages.</p>
+          <br />
+          <p><a href="discovery.html" class="btn" aria-label="Complete the questionnaire and book your free 45-minute call to get a free quote">
+  Fill the questionnaire & book your free 45-minute call for a free quote
+</a>
+</p>
 
-    <!-- PROBLEMS I SOLVE -->
-    <section class="section section--panel">
-      <div class="container">
-        <div class="box content">
-          <h2 class="center">Problems I Solve</h2>
-          <ul>
-            <li>“Our website looks nice but doesn’t bring leads.”</li>
-            <li>“We don’t know what to say to make people contact us.”</li>
-            <li>“We need a fast, mobile-friendly site that works.”</li>
-            <li>“We want simple marketing we can keep using.”</li>
-          </ul>
-          <p class="m-0"><strong>Outcome:</strong> more visibility, more trust, more clients.</p>
+          
+
+          <figure class="hero__figure" aria-hidden="true">
+            <img src="assets/hero-services.jpg" alt="" />
+          </figure>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <!-- WHY ME -->
-    <section class="section">
-      <div class="container grid grid--auto">
-        <div class="box">
-          <h3>Why work with me</h3>
-          <ul class="stack">
-            <li><strong>Frontend + Marketing:</strong> I code the site <em>and</em> write messages that convert.</li>
-            <li><strong>Simple language:</strong> no jargon, just clear words that sell.</li>
-            <li><strong>Done-for-you:</strong> one partner from idea to launch.</li>
-            <li><strong>Reliable:</strong> on time, documented, easy handover.</li>
-          </ul>
-        </div>
-        <div class="box">
-          <h3>Results you can expect</h3>
-          <ul class="stack">
-            <li>Faster site, better mobile experience</li>
-            <li>Clear message → higher trust</li>
-            <li>More form fills and calls</li>
-            <li>Easy tools your team can keep using</li>
-          </ul>
-        </div>
-      </div>
-    </section>
+      <!-- Problems I Solve -->
+<section class="section section--panel" aria-labelledby="problems-title">
+  <div class="container">
+    <div class="box content">
+      <h2 id="problems-title" class="center">If this sounds like you…</h2>
 
-    <!-- PACKAGES -->
-    <section class="section" id="packages" aria-labelledby="packages-title">
-      <div class="container">
-        <h2 id="packages-title" class="center">Packages</h2>
+      <ul class="stack">
+        <li>
+          <strong>“We paid for a website, but no one contacts us.”</strong><br>
+          You check your inbox every day and it’s still empty.  
+          <em>I create websites built to convert visitors into real leads, with clear calls to action and messages that make people click.</em>
+        </li>
 
-        <div class="grid grid--auto">
-          <!-- Starter -->
-          <article class="card" role="article">
-            <h3>Starter – Essential Online Presence</h3>
-            <ul>
-              <li>1 responsive website (up to 3 pages)</li>
-              <li>Branded design (colors, fonts, layout)</li>
-              <li>SEO-friendly structure</li>
-              <li>Copy for Home + About</li>
-              <li>Contact form integration</li>
-            </ul>
-            <p><strong>From €700 – €1,000</strong></p>
-            <p><a href="#contact" class="btn">Get a Quote</a></p>
-          </article>
+        <li>
+          <strong>“People visit our site… then leave without doing anything.”</strong><br>
+          You see traffic in your stats, but zero calls or emails.  
+          <em>I design user-friendly layouts that guide people step by step, from curiosity to contact.</em>
+        </li>
 
-          <!-- Pro -->
-          <article class="card" role="article">
-            <h3>Pro – Growth & Engagement</h3>
-            <ul>
-              <li>Website up to 6 pages <em>or</em> landing page + blog</li>
-              <li>Conversion copy (services, CTAs)</li>
-              <li>Basic brand kit (palette, fonts, tone)</li>
-              <li>Email marketing setup (MailerLite/HubSpot)</li>
-              <li>1 email sequence (3–5 emails)</li>
-              <li>Social setup for 2 platforms</li>
-            </ul>
-            <p><strong>From €1,200 – €2,000</strong></p>
-            <p><a href="#contact" class="btn">Get a Quote</a></p>
-          </article>
+        <li>
+  <strong>“We’re a small business, and every euro has to bring results.”</strong><br>
+  You can’t afford to waste money on a website that just looks pretty.  
+  <em>I build sites that focus on conversions, turning visits into sales, so every cent you invest works harder for you.</em>
+</li>
 
-          <!-- Premium -->
-          <article class="card" role="article">
-            <h3>Premium – Full Digital Launch</h3>
-            <ul>
-              <li>Website up to 10 pages <em>or</em> light e-commerce</li>
-              <li>Advanced SEO (keywords, speed)</li>
-              <li>Custom features (forms, map, dashboards)</li>
-              <li>Full site copy</li>
-              <li>Brand kit (logo concept + templates)</li>
-              <li>Email funnel (5–7 emails)</li>
-              <li>Social launch pack (10 post templates)</li>
-            </ul>
-            <p><strong>From €2,500 – €4,000</strong></p>
-            <p><a href="#contact" class="btn">Get a Quote</a></p>
-          </article>
-        </div>
-      </div>
-    </section>
+<li>
+  <strong>“We’re a startup and need to grow fast with limited time and people.”</strong><br>
+  You don’t have a marketing team, just a dream and a deadline.  
+  <em>I deliver complete websites + launch systems that save time, attract clients, and let you focus on building your product.</em>
+</li>
 
-    <!-- BONUSES -->
-    <section class="section section--panel" id="bonuses" aria-labelledby="bonus-title">
-      <div class="container">
-        <div class="box content">
-          <h2 id="bonus-title" class="center">Bonuses (included this month)</h2>
-          <ul class="grid grid--auto" role="list">
-            <li><strong>Speed Bonus:</strong> priority timeline</li>
-            <li><strong>Friend Bonus:</strong> bring a friend, both get –10%</li>
-            <li><strong>SEO Starter Kit:</strong> on-page basics set up</li>
-            <li><strong>1-Month Free Support:</strong> post-launch help</li>
-            <li><strong>Analytics Setup:</strong> GA4 + simple dashboard</li>
-            <li><strong>Quick Fix Guarantee:</strong> minor fixes within 48h</li>
-            <li><strong>Content Pack:</strong> 3 social posts ready to publish</li>
-            <li><strong>Lead Magnet Template:</strong> 1-page PDF to capture emails</li>
-          </ul>
-        </div>
-      </div>
-    </section>
+<li>
+  <strong>“We’re busy running the business, not managing websites.”</strong><br>
+  You’re juggling orders, calls, and employees, and the site is always last on the list.  
+  <em>I handle everything for you: design, content, updates, and monthly care, so your team can focus on what they do best.</em>
+</li>
 
-    <!-- PROCESS -->
-    <section class="section" id="process" aria-labelledby="process-title">
-      <div class="container">
-        <h2 id="process-title" class="center">How it works</h2>
-        <div class="grid grid--auto">
-          <div class="box">
-            <h3>1) Discovery (20 min)</h3>
-            <p>Goals, audience, offers. We keep it simple and clear.</p>
-          </div>
-          <div class="box">
-            <h3>2) Plan & Copy</h3>
-            <p>Site map + words that sell. No jargon, just clarity.</p>
-          </div>
-          <div class="box">
-            <h3>3) Design & Build</h3>
-            <p>Responsive, fast, accessible. You see progress live.</p>
-          </div>
-          <div class="box">
-            <h3>4) Launch & Handover</h3>
-            <p>Training + checklist + support. Your team stays independent.</p>
-          </div>
-        </div>
-      </div>
-    </section>
+<li>
+  <strong>“We want to look as professional as bigger competitors.”</strong><br>
+  You know your product is great but your website doesn’t show it yet.  
+  <em>I create clean, modern websites that build trust instantly, so you look like the strong brand you really are.</em>
+</li>
 
-    <!-- FAQ -->
-    <section class="section section--panel" id="faq" aria-labelledby="faq-title">
-      <div class="container content">
-        <h2 id="faq-title" class="center">FAQs</h2>
-        <div class="box">
-          <h3>How long does it take?</h3>
-          <p>Most Starter/Pro sites: 2–4 weeks, depending on content and feedback speed.</p>
-          <h3>Do you write the copy?</h3>
-          <p>Yes — simple, clear, and conversion-focused.</p>
-          <h3>Can you work in English only?</h3>
-          <p>Yes. Norwegian optional later.</p>
-          <h3>Do you offer maintenance?</h3>
-          <p>Yes, monthly plans available.</p>
-          <h3>Payment terms?</h3>
-          <p>50% to start, 50% before launch.</p>
-        </div>
-      </div>
-    </section>
+        <li>
+          <strong>“We don’t know what to write on our pages.”</strong><br>
+          You stare at a blank screen, unsure how to describe what you do.  
+          <em>I write simple, clear copy that explains your value and makes people trust you, even if they just met you online.</em>
+        </li>
 
-    <!-- CONTACT -->
-    <section class="section" id="contact" aria-labelledby="contact-title">
-      <div class="container">
-        <h2 id="contact-title" class="center">Let’s talk</h2>
-        <div class="content center">
-          <p>Tell me about your business and goals. I’ll reply with a custom quote within 24h.</p>
-        </div>
+        <li>
+          <strong>“We’re losing clients to competitors with better-looking sites.”</strong><br>
+          Their site looks professional, yours looks outdated, and you feel invisible.  
+          <em>I give your brand a fresh, modern look, so you stand out and attract attention from the first second.</em>
+        </li>
 
-        <form class="contact-form box content" action="https://formspree.io/f/your-id" method="POST">
-          <label>
-            <span>Your Name</span>
-            <input type="text" name="name" placeholder="Jane Doe" required />
-          </label>
-          <label>
-            <span>Email</span>
-            <input type="email" name="email" placeholder="you@example.com" required />
-          </label>
-          <label>
-            <span>Business / Website (optional)</span>
-            <input type="url" name="website" placeholder="https://your-site.com" />
-          </label>
-          <label>
-            <span>Your Goal</span>
-            <textarea name="message" placeholder="Tell me what you want to achieve…" required></textarea>
-          </label>
+        <li>
+          <strong>“We don’t have time or skills to update our site.”</strong><br>
+          You’re busy running your business, not fixing broken links or plugins.  
+          <em>I offer monthly care plans that keep your site fast, secure, and worry-free, no effort needed from you.</em>
+        </li>
+      </ul>
 
-          <button type="submit" class="btn">Send</button>
-          <p class="footnote">No spam. I reply within 24h. By sending this form you agree to be contacted about your request.</p>
-        </form>
-      </div>
-    </section>
-  </main>
-
-          <!-- Footer -->
-  <footer class="section section--panel">
-    <div class="container">
-      <div class="grid" style="align-items:center; grid-template-columns: 1fr auto;">
-        <p class="m-0 social-inline">
-          <a href="https://www.linkedin.com/in/coded-by-stella-3b3528384/" target="_blank" rel="noreferrer noopener">LinkedIn</a>
-          <a href="https://www.instagram.com/coded_by_stella/" target="_blank" rel="noreferrer noopener">Instagram</a>
-          <a href="mailto:stella.marrali.no@gmail.com">Email</a>
-        </p>
-      </div>
-      <p class="center footnote">
-        © <span id="year"></span> — This website was designed &amp; developed with ❤️ by Stella
+      <p class="m-0 center">
+        <strong>Result:</strong> more visibility, more trust, and more clients without stress.
       </p>
     </div>
-  </footer>
+  </div>
+</section>
+<br />
+<div class="center">
+  <a href="discovery.html" class="btn">
+    Fill the questionnaire & book your free 45-minute call for a free quote
+  </a>
+</div>
 
-  <!-- JS -->
-  <script src="src/javascript.js" defer></script>
+      <!-- Why Me / Results -->
+      <section class="section" aria-labelledby="why-results-title">
+        <div class="container grid grid--auto">
+          <div class="box">
+            <h3 id="why-results-title">Why work with me</h3>
+            <ul class="stack">
+              <li><strong>Frontend + Marketing:</strong> I code the site <em>and</em> write messages that convert.</li>
+              <li><strong>Simple language:</strong> no jargon, just clear words that sell.</li>
+              <li><strong>Done-for-you:</strong> one partner from idea to launch.</li>
+              <li><strong>Reliable:</strong> on time, documented, easy handover.</li>
+            </ul>
+          </div>
+          <div class="box">
+            <h3>Results you can expect</h3>
+            <ul class="stack">
+              <li>Faster site, better mobile experience</li>
+              <li>Clear message → higher trust</li>
+              <li>More form fills and calls</li>
+              <li>Easy tools your team can keep using</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- Business Packages -->
+      <section class="section" id="packages" aria-labelledby="packages-title">
+        <div class="container">
+          <h2 id="packages-title" class="center">💼 Business Packages</h2>
+
+          <div class="grid grid--auto">
+            <!-- Starter -->
+            <article class="card" role="article" aria-labelledby="pkg-starter">
+              <h3 id="pkg-starter">Starter – Essential Online Presence</h3>
+              <ul>
+                <li>1 responsive website (up to 3 pages)</li>
+                <li>Branded design (colors, fonts, layout)</li>
+                <li>SEO-friendly structure</li>
+                <li>Copy for Home + About + Contact</li>
+                <li>Contact form integration</li>
+                <li>1 free Monthly Growth Engine</li>
+              </ul>
+              <p><strong>From €900 – €1,400</strong></p>
+              <p><a href="#contact" class="btn">Get a Quote</a></p>
+            </article>
+
+            <!-- Pro -->
+            <article class="card" role="article" aria-labelledby="pkg-pro">
+              <h3 id="pkg-pro">Pro – Growth & Engagement</h3>
+              <ul>
+                <li>Website up to 6 pages <em>or</em> landing page + blog</li>
+                <li>Conversion copy (services, CTAs)</li>
+                <li>Basic brand kit (palette, fonts, tone)</li>
+                <li>Email marketing setup (MailerLite/HubSpot)</li>
+                <li>1 email sequence (3–5 emails)</li>
+                <li>Social setup for 2 platforms (Facebook, Instagram, LinkedIn)</li>
+                <li>1 free Monthly Growth Engine</li>
+              </ul>
+              <p><strong>From €1,500 – €2,000</strong></p>
+              <p><a href="#contact" class="btn">Get a Quote</a></p>
+            </article>
+
+            <!-- Premium -->
+            <article class="card" role="article" aria-labelledby="pkg-premium">
+              <h3 id="pkg-premium">Premium – Full Digital Launch</h3>
+              <ul>
+                <li>Website up to 10 pages </li>
+                <li>Custom features (forms, map, dark mode, extra language)</li>
+                <li>Full site copy</li>
+                <li>Brand kit (logo concept)</li>
+                <li>Email funnel (5–7 emails)</li>
+                <li>Social launch pack (10 post)</li>
+                <li>1 free Monthly Growth Engine</li>
+              </ul>
+              <p><strong>From €3,500 – €4,000</strong></p>
+              <p><a href="#contact" class="btn">Get a Quote</a></p>
+            </article>
+          </div>
+        </div>
+        </section>
+
+        <br />
+<div class="center">
+  <a href="discovery.html" class="btn">
+    Fill the questionnaire & book your free 45-minute call for a free quote
+  </a>
+</div>
+
+        <!-- 🧩 One-Page Landing System -->
+<section class="section" id="landing-package" aria-labelledby="landing-package-title">
+  <div class="container">
+    <h2 id="landing-package-title" class="center">🧩 One-Page Landing System</h2>
+
+    <article class="card content" role="article" aria-labelledby="landing-headline">
+      <h3 id="landing-headline">Turn visitors into clients with just one page.</h3>
+      <p class="m-0">
+        A focused, conversion-ready landing page designed to capture leads or sell a single offer.
+      </p>
+      <hr>
+
+      <div class="grid grid--auto">
+        <div class="box">
+          <h4 class="m-0">What’s included</h4>
+        </br>
+          <ul>
+            <li>1 custom landing page (fast, mobile-friendly)</li>
+            <li>High-converting copywriting (headline, benefits, CTA)</li>
+            <li>Lead form or booking form (anti-spam protected)</li>
+            <li>Basic SEO & performance optimization</li>
+            <li>3 CTA / headline variants to test</li>
+          </ul>
+        </div>
+        <div class="box">
+          <h4 class="m-0">Free Bonuses</h4>
+          </br>
+          <ul>
+            <li>3 Ad copy (for Meta/Google Ads)</li>
+            <li>1 free Monthly Growth Engine</li>
+          </ul>
+        </div>
+      </div>
+
+      <p><strong>From €600 – €900</strong></p>
+      <p><a href="#contact" class="btn" aria-label="Get a Landing Page quote">Get a Quote</a></p>
+
+      <p class="footnote">
+        Perfect for startups, special offers, product launches or lead generation campaigns.
+      </p>
+    </article>
+  </div>
+</section>
+<br />
+<div class="center">
+  <a href="discovery.html" class="btn">
+    Fill the questionnaire & book your free 45-minute call for a free quote
+  </a>
+</div>
+
+<!-- 🎯 Local Business Booster -->
+<section class="section" id="local-booster-package" aria-labelledby="local-booster-title">
+  <div class="container">
+    <h2 id="local-booster-title" class="center">🎯 Local Business Booster</h2>
+
+    <article class="card content" role="article" aria-labelledby="local-booster-headline">
+      <h3 id="local-booster-headline">Get found. Get booked. Get trusted.</h3>
+      <p class="m-0">
+        A clean, conversion-focused website that attracts local clients and gets you more bookings.
+      </p>
+      <hr>
+
+      <div class="grid grid--auto">
+        <div class="box">
+          <h4 class="m-0">What’s included</h4>
+          </br>
+          <ul>
+            <li>5 pages: Home, About, Services, Reviews, Contact</li>
+            <li>SEO local schema (titles, meta, Google Maps integration)</li>
+            <li>Google Business Profile setup & optimization</li>
+            <li>Direct CTAs: call, WhatsApp, booking buttons</li>
+            <li>Testimonials & review section</li>
+            <li>Speed & mobile optimization</li>
+          </ul>
+        </div>
+        <div class="box">
+          <h4 class="m-0">Free Bonuses</h4>
+          </br>
+          <ul>
+            <li>3 local ad post templates (Facebook/Instagram)</li>
+            <li>Review request email template</li>
+            <li>1 month of post-launch support (email)</li>
+            <li>1 free Monthly Growth Engine</li>
+          </ul>
+        </div>
+      </div>
+
+      <p><strong>From €1,200 – €1,800</strong></p>
+      <p><a href="#contact" class="btn" aria-label="Get a Local Business quote">Get a Quote</a></p>
+
+      <p class="footnote">
+        Ideal for salons, gyms, restaurants, medical studios, wellness centers and local shops.
+      </p>
+    </article>
+  </div>
+</section>
+<br />
+<div class="center">
+  <a href="discovery.html" class="btn">
+    Fill the questionnaire & book your free 45-minute call for a free quote
+  </a>
+</div>
+
+<!-- 🧠 Personal Brand Website -->
+<section class="section" id="personal-brand-package" aria-labelledby="personal-brand-title">
+  <div class="container">
+    <h2 id="personal-brand-title" class="center">🧠 Personal Brand Website</h2>
+
+    <article class="card content" role="article" aria-labelledby="personal-brand-headline">
+      <h3 id="personal-brand-headline">Show your value. Build trust. Sell your expertise.</h3>
+      <p class="m-0">
+        A clean, persuasive website that positions you as a trusted expert and turns followers into paying clients.
+      </p>
+      <hr>
+
+      <div class="grid grid--auto">
+        <div class="box">
+          <h4 class="m-0">What’s included</h4>
+          </br>
+          <ul>
+            <li>5 pages: Home, About, Offer, Testimonials, Contact</li>
+            <li>Conversion-focused copywriting (offers + CTAs)</li>
+            <li>Booking system (Calendly or contact form)</li>
+            <li>Lead magnet setup (PDF freebie + signup form)</li>
+            <li>Email automation (welcome + nurture)</li>
+            <li>Speed & mobile optimization</li>
+          </ul>
+        </div>
+        <div class="box">
+          <h4 class="m-0">Free Bonuses</h4>
+          </br>
+          <ul>
+            <li>LinkedIn profile refresh (headline + about)</li>
+            <li>Instagram link page (Link-in-bio design)</li>
+            <li>3 social post templates (launch your new site)</li>
+            <li>1 month of post-launch support (email)</li>
+            <li>1 free Monthly Growth Engine</li>
+          </ul>
+        </div>
+      </div>
+
+      <p><strong>From €1,000 – €1,600</strong></p>
+      <p><a href="#contact" class="btn" aria-label="Get a Personal Brand quote">Get a Quote</a></p>
+
+      <p class="footnote">
+        Ideal for coaches, consultants, creators, trainers, therapists and professionals building a personal brand.
+      </p>
+    </article>
+  </div>
+</section>
+<br />
+<div class="center">
+  <a href="discovery.html" class="btn">
+    Fill the questionnaire & book your free 45-minute call for a free quote
+  </a>
+</div>
+
+      <!-- MONTHLY GROWTH ENGINE (requires a site package) -->
+<section class="section section--panel" id="growth-engine" aria-labelledby="growth-engine-title">
+  <div class="container">
+    <h2 id="growth-engine-title" class="center">Monthly Growth Engine</h2>
+    <p class="content center">
+      A simple monthly plan that keeps your website updated and your marketing active, so you get clients every month.
+    </p>
+
+    <article class="card content" role="article" aria-labelledby="growth-engine-plan">
+      <h3 id="growth-engine-plan">What’s included each month</h3>
+
+      <div class="grid grid--auto">
+        <!-- Web Dev -->
+        <div class="box">
+          <h4 class="m-0">💻 Web Development</h4>
+        </br>
+          <ul>
+            <li><strong>Core updates</strong> (CMS, theme, plugins or dependencies)</li>
+            <li><strong>Content edits / updates</strong> (up to <strong>1 hour</strong>/month)</li>
+            <li><strong>Minor bug fixes</strong> included</li>
+          </ul>
+        </div>
+
+        <!-- Marketing -->
+        <div class="box">
+          <h4 class="m-0">📈 Marketing</h4>
+          </br>
+          <ul>
+            <li><strong>Offer of the Month</strong> (with bonus + guarantee)</li>
+            <li><strong>Mini Email Campaign</strong>:
+              1 offer email + 1 follow-up + 1 thank-you + 1 referral
+            </li>
+            <li><strong>Meta Ad Post</strong> (Facebook/Instagram copy + image, ready to publish)</li>
+            <li><strong>1 Blog Post</strong> (copy + images, SEO-ready)</li>
+          </ul>
+        </div>
+      </div>
+
+      <p><strong>€389 / month</strong> — cancel anytime.</p>
+
+      <div class="box">
+        <h4 class="m-0">Add-ons (optional)</h4>
+        <ul>
+          <li><strong>Extra content edits</strong> (+2 hours): +€70 / month</li>
+          <li><strong>Blog help</strong> (1 post formatting/editing + images): +€50 / month</li>
+          <li><strong>Priority support 24/7</strong> (fast lane): +€49 / month</li>
+          <li><strong>Seasonal landing page</strong> (for the monthly offer on your website): +€120 / month</li>
+        </ul>
+      </div>
+
+      <p class="footnote">
+        <strong>Important:</strong> the Monthly Growth Engine is available only
+        <em>after purchasing</em> one of the website packages (Starter, Pro or Premium).
+      </p>
+
+      <p>
+        <a href="#contact" class="btn" aria-label="Start Monthly Growth Engine">
+          Start Monthly Growth Engine
+        </a>
+      </p>
+    </article>
+  </div>
+</section>
+<br />
+<div class="center">
+  <a href="discovery.html" class="btn">
+    Fill the questionnaire & book your free 45-minute call for a free quote
+  </a>
+</div>
+
+<!-- PORTFOLIO WEBSITE – for Freelancers & Professionals -->
+<section class="section" id="portfolio-package" aria-labelledby="portfolio-package-title">
+  <div class="container">
+    <h2 id="portfolio-package-title" class="center">Portfolio Website – For Freelancers & Professionals</h2>
+
+    <article class="card content" role="article" aria-labelledby="portfolio-headline">
+      <h3 id="portfolio-headline">Show your work. Win more clients.</h3>
+      <p class="m-0">
+        Your portfolio is your best salesperson. I build a clean, fast website that presents your work,
+        your story and your services in a way that makes recruiters/customers contact you.
+      </p>
+      <hr>
+
+      <div class="grid grid--auto">
+        <!-- Why it works -->
+        <div class="box">
+          <h4 class="m-0">Why it works</h4>
+        </br>
+          <ul class="stack">
+            <li>Clear message → people understand what you do in seconds</li>
+            <li>Strong social proof → case studies & testimonials build trust</li>
+            <li>Simple paths to contact/booking → more inquiries, less friction</li>
+          </ul>
+        </div>
+
+        <!-- What's included -->
+        <div class="box">
+          <h4 class="m-0">What’s included</h4>
+          </br>
+          <ul>
+            <li>Up to <strong>5 pages</strong>: Home, About, Services, Portfolio, Contact</li>
+            <li><strong>Case Study template</strong> (before/after, process, results)</li>
+            <li><strong>Gallery</strong> (images or project cards) + tags/filters (light)</li>
+            <li><strong>Conversion copy</strong> for Home + Services + Contact</li>
+            <li><strong>Contact form</strong> (anti-spam) or <strong>booking link</strong> (Calendly)</li>
+            <li><strong>SEO basics</strong> (titles, meta, structure, alt text)</li>
+            <li><strong>Speed & mobile</strong> optimization</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Bonuses -->
+      <div class="box">
+        <h4 class="m-0">Free Bonuses</h4>
+        </br>
+        <ul class="grid grid--auto">
+          <li>LinkedIn bio refresh (headline + about)</li>
+          <li>3 social post templates (launch your new site)</li>
+          <li>Testimonial request script (to collect reviews fast)</li>
+          <li>1 free Monthly Growth Engine</li>
+        </ul>
+      </div>
+
+      <!-- Add-ons -->
+      <div class="box">
+        <h4 class="m-0">Add-ons (optional)</h4>
+        </br>
+        <ul>
+          <li><strong>Blog setup</strong> (listing + single post layout): +€90</li>
+          <li><strong>Booking page</strong> (offer + FAQs + CTA): +€120</li>
+          <li><strong>Extra case study</strong> (write + layout): +€70 each</li>
+          <li><strong>Extra pages</strong> (per page): +€99</li>
+        </ul>
+      </div>
+
+      <p><strong>From €900 – €1,400</strong> (depending on content & assets)</p>
+      <p><a href="#contact" class="btn" aria-label="Get a Portfolio Website quote">Get a Quote</a></p>
+
+      <p class="footnote">
+        Perfect for coaches, consultants, designers, photographers, developers, therapists, trainers
+        and any professional who needs a clean, credible and persuasive online presence.
+      </p>
+    </article>
+  </div>
+</section>
+
+<div class="center">
+  <a href="discovery.html" class="btn">
+    Fill the questionnaire & book your free 45-minute call for a free quote
+  </a>
+</div>
+
+      <!-- Process -->
+      <section class="section" id="process" aria-labelledby="process-title">
+        <div class="container">
+          <h2 id="process-title" class="center">How it works</h2>
+          <div class="grid grid--auto">
+            <div class="box">
+              <h3>1 Discovery Call (45 min)</h3>
+              <p>Goals, audience, offers. We keep it simple and clear.</p>
+            </div>
+            <div class="box">
+              <h3>2 Plan & Copy</h3>
+              <p>Site map + words that sell. No jargon, just clarity.</p>
+            </div>
+            <div class="box">
+              <h3>3 Design & Build</h3>
+              <p>Responsive, fast, accessible. You see progress live.</p>
+            </div>
+            <div class="box">
+              <h3>4 Launch & Support</h3>
+              <p>After launch you have 1 free Monthly Growth Engine</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- FAQ -->
+      <section class="section section--panel" id="faq" aria-labelledby="faq-title">
+        <div class="container content">
+          <h2 id="faq-title" class="center">FAQs</h2>
+          <div class="box">
+            <h3>How long does it take?</h3>
+            <p>Most Starter/Pro sites: 2–4 weeks, depending on content and feedback speed.</p>
+            <h3>Do you write the copy?</h3>
+            <p>Yes: simple, clear and conversion focused.</p>
+            <h3>Which languages can you work in?</h3>
+            <p>English, Italian, French, German (Norwegian in progress).</p>
+            <h3>Do you offer maintenance?</h3>
+            <p>Yes, monthly plans available.</p>
+            <h3>Payment terms?</h3>
+            <p>50% to start, 50% before launch.</p>
+          </div>
+        </div>
+      </section>
+
+      <br />
+<div class="center">
+  <a href="discovery.html" class="btn">
+    Fill the questionnaire & book your free 45-minute call for a free quote
+  </a>
+</div>
+        
+      </section>
+    </article>
+  </div>
+</main>
+
+<!-- Footer -->
+<footer class="section section--panel">
+  <div class="container">
+    <div class="grid" style="align-items:center; grid-template-columns: 1fr auto;">
+      <p class="m-0 social-inline">
+        <a href="https://www.linkedin.com/in/coded-by-stella-3b3528384/" target="_blank" rel="noreferrer noopener">LinkedIn</a>
+        <a href="https://www.instagram.com/coded_by_stella/" target="_blank" rel="noreferrer noopener">Instagram</a>
+        <a href="mailto:stella.marrali.no@gmail.com">Email</a>
+      </p>
+    </div>
+    <p class="center footnote">
+      © <span id="year"></span> — This website was designed &amp; developed with ❤️ by Stella
+    </p>
+  </div>
+</footer>
+
+<!-- JS -->
+<script src="src/javascript.js" defer></script>
+<script>
+ 
+  document.getElementById('year').textContent = new Date().getFullYear();
+</script>
 </body>
 </html>
