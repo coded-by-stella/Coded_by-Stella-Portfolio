@@ -86,13 +86,11 @@ html[data-theme="dark"]{
   --nav-hover-bg:rgba(167,139,250,0.18);
 }
 
-.bonus-total{ font-weight:600; opacity:.9; margin-top:-6px; }
-
 
 /* === System dark fallback === */
 @media (prefers-color-scheme: dark){
   html:not([data-theme]){
-    --bg-1:#0a0a0a; --bg-2:#16111b; --bg-3:#38b6ff;
+    --bg-1:#0a0a0a; --bg-2:#16111b; --bg-3:#4b1e5d;
     --color-text:#e5e7eb; --color-muted:#cbd5e1;
     --color-card:#12172b; --color-border:rgba(255,255,255,0.12);
     --brand:#ffffff; --color-accent:#a78bfa; --color-accent-hover:#c4b5fd;
