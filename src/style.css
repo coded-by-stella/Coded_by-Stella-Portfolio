@@ -428,3 +428,100 @@ html[data-theme="dark"] .box,
 html[data-theme="dark"] .tier{
   border: 1px solid var(--panel-border);
 }
+
+/* FAQ accordion layout */
+.faq-list{
+  display: grid;
+  gap: clamp(12px, 1.2vw, 16px);
+}
+
+/* FAQ base box */
+.faq.box{
+  padding: clamp(16px, 2.2vw, 22px);
+}
+
+/* FAQ summary row */
+.faq summary{
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-items: center;
+  gap: .75rem;
+  cursor: pointer;
+  list-style: none;
+}
+.faq summary::-webkit-details-marker{ display: none; }
+
+/* FAQ question text */
+.faq__q{
+  margin: 0;
+  font-size: 1.05rem;
+}
+
+/* FAQ icon (plus to minus) */
+.faq__icon{
+  position: relative;
+  width: 18px;
+  height: 18px;
+  color: var(--color-text);
+  opacity: .85;
+}
+.faq__icon::before,
+.faq__icon::after{
+  content: "";
+  position: absolute;
+  inset: 0;
+  margin: auto;
+  background: currentColor;
+  border-radius: 1px;
+}
+.faq__icon::before{ width: 18px; height: 2px; }
+.faq__icon::after{ width: 2px; height: 18px; transition: transform .2s ease; }
+.faq[open] .faq__icon::after{ transform: scaleY(0); }
+
+/* FAQ answer block */
+.faq__content{
+  margin-top: .75rem;
+  color: var(--color-text);
+}
+.faq__content p{ margin: 0 0 .75rem; }
+.faq__content ul{ margin: .5rem 0 0 1.25rem; }
+
+/* Dark theme tweaks for FAQ */
+html[data-theme="dark"] .faq__icon{ color: var(--ink); opacity: .9; }
+
+/* FAQ accordion */
+.faq-list{display:grid;gap:14px;max-width:900px;margin:0 auto}
+details.faq{
+  background:var(--color-card);
+  border:1px solid var(--color-border);
+  border-radius:14px;
+  box-shadow:var(--shadow);
+  overflow:hidden
+}
+html[data-theme="dark"] details.faq{
+  background:var(--panel);
+  border-color:var(--panel-border)
+}
+details.faq summary{
+  list-style:none;
+  cursor:pointer;
+  padding:1rem 1.25rem;
+  font-weight:600;
+  display:flex;
+  align-items:center;
+  justify-content:space-between
+}
+details.faq[open] summary{
+  border-bottom:1px solid var(--color-border)
+}
+html[data-theme="dark"] details.faq[open] summary{
+  border-bottom:1px solid var(--panel-border)
+}
+details.faq summary::-webkit-details-marker{display:none}
+.faq__chev{
+  width:12px;height:12px;flex:0 0 12px;margin-left:12px;
+  border:2px solid currentColor;border-top:0;border-left:0;
+  transform:rotate(45deg);transition:transform .2s ease
+}
+details.faq[open] .faq__chev{transform:rotate(-135deg)}
+.faq__content{padding:1rem 1.25rem}
