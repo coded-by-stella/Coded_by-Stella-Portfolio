@@ -178,3 +178,19 @@
   });
 
 })();
+
+/* File input: show selected file names */
+(() => {
+  const controls = document.querySelectorAll('.file-control input[type="file"]');
+  controls.forEach(input => {
+    const nameEl = input.parentElement.querySelector('.file-name');
+    const empty  = nameEl?.dataset.empty || 'No file selected';
+    const update = () => {
+      const files = Array.from(input.files || []);
+      nameEl.textContent = files.length ? files.map(f => f.name).join(', ') : empty;
+    };
+    update();
+    input.addEventListener('change', update);
+  });
+})();
+

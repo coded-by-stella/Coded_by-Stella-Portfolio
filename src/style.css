@@ -630,3 +630,35 @@ html[data-theme="dark"] .site-footer .footer-heading{ color:#f3f4f6; }
   object-fit: cover;
   box-shadow: var(--shadow);
 }
+
+/* Custom file input */
+.file-control { display:block; }
+.file-control > span { display:block; font-weight:600; margin-bottom:.35rem; }
+
+.file-ui{
+  position:relative;
+  display:inline-flex;
+  align-items:center;
+  gap:.6rem;
+  padding:.4rem .6rem;
+  background:var(--card);
+  border:1px solid var(--bd);
+  border-radius:999px;
+  box-shadow:var(--shadow);
+}
+
+.file-ui .btn{ pointer-events:none; } /* il click lo prende l'input invisibile */
+.file-name{ font-size:.95rem; opacity:.85; white-space:nowrap; overflow:hidden; text-overflow:ellipsis; max-width:240px; }
+
+.file-ui input[type="file"]{
+  position:absolute;
+  inset:0;               /* copre tutta l’area clickabile */
+  opacity:0;
+  cursor:pointer;
+}
+
+/* Dark mode */
+html[data-theme="dark"] .file-ui{
+  background:var(--card);
+  border:1px solid var(--panel-border);
+}

@@ -151,17 +151,26 @@
             <textarea name="q7_assets" placeholder="e.g., logo + colors, 25 reviews (4.8★), 1k email list…" required></textarea>
           </label>
 
-          <!-- Optional uploads  -->
-          <div class="grid grid--auto">
-            <label>
-              <span>Upload logo / brand kit (optional)</span>
-              <input type="file" name="brand_files" accept=".png,.jpg,.jpeg,.svg,.pdf" />
-            </label>
-            <label>
-              <span>Upload any reference file (optional)</span>
-              <input type="file" name="ref_files" accept=".png,.jpg,.jpeg,.pdf" />
-            </label>
-          </div>
+          <!-- Optional uploads -->
+<div class="grid grid--auto">
+  <label class="file-control">
+    <span>Upload logo / brand kit (optional)</span>
+    <div class="file-ui">
+      <span class="btn btn--sm">Choose file</span>
+      <span class="file-name" data-empty="No file selected">No file selected</span>
+      <input id="brand_files" type="file" name="brand_files" accept=".png,.jpg,.jpeg,.svg,.pdf" aria-label="Upload logo or brand kit" />
+    </div>
+  </label>
+
+  <label class="file-control">
+    <span>Upload any reference file (optional)</span>
+    <div class="file-ui">
+      <span class="btn btn--sm">Choose file</span>
+      <span class="file-name" data-empty="No file selected">No file selected</span>
+      <input id="ref_files" type="file" name="ref_files" accept=".png,.jpg,.jpeg,.pdf" aria-label="Upload reference file" />
+    </div>
+  </label>
+</div>
 
           <hr>
 
