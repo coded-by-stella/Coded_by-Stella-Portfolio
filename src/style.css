@@ -618,3 +618,15 @@ html[data-theme="dark"] .site-header .site-tagline{
 .site-footer .footnote{ margin-top:1rem; }
 /* Dark mode inherit */
 html[data-theme="dark"] .site-footer .footer-heading{ color:#f3f4f6; }
+
+/* Variant: se usi brand-title/brand-logo */
+.brand-title{ margin: 0; }
+.brand-logo{
+  display: block;
+  margin: 0 auto;
+  width: clamp(180px, 24vw, 320px);
+  height: auto;
+  border-radius: 16px;
+  object-fit: cover;
+  box-shadow: var(--shadow);
+}
