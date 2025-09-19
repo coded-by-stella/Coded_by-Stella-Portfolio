@@ -489,3 +489,281 @@ footer .grid{ display:grid; grid-template-columns:1fr auto; align-items:center; 
 @media (max-width:760px){
   /* già gestito dalle tue regole; lasciamo invariato */
 }
+
+/* dark design tokens */
+html[data-theme="dark"]{
+  --brand: #008eca;
+  --brand-hover: #11a7ef;
+
+  --bg-angle: 180deg;
+  --bg1: #000000;
+  --bg2: #0a0a0a;
+
+  --ink: #e5e7eb;
+  --muted: #9ca3af;
+  --panel: #0b0f19;
+  --panel-border: #008eca;
+
+  --radius-lg: 16px;
+  --shadow-lg: 0 14px 36px rgba(0,0,0,.45);
+}
+
+/* dark base */
+html[data-theme="dark"],
+html[data-theme="dark"] body{
+  background: linear-gradient(var(--bg-angle), var(--bg1), var(--bg2));
+  color: var(--ink);
+}
+
+/* dark panels */
+html[data-theme="dark"] .section--panel,
+html[data-theme="dark"] .card,
+html[data-theme="dark"] .box{
+  background: var(--panel);
+  border: 1px solid var(--panel-border);
+}
+
+/* dark links & buttons */
+html[data-theme="dark"] a{ color: var(--brand); }
+html[data-theme="dark"] .btn{
+  background: var(--brand);
+  border-color: var(--brand);
+  color: #061218;
+}
+html[data-theme="dark"] .btn:hover{
+  background: var(--brand-hover);
+  border-color: var(--brand-hover);
+}
+
+/* dark headings */
+html[data-theme="dark"] h1,
+html[data-theme="dark"] h2,
+html[data-theme="dark"] h3{
+  color: #f3f4f6;
+}
+
+/* tier panels */
+.tier{
+  position: relative;
+  border: 1px solid var(--panel-border);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-lg);
+  overflow: hidden;
+}
+
+/* tier top bar */
+.tier::before{
+  content:"";
+  position:absolute;
+  inset:0 0 auto 0;
+  height:6px;
+  border-top-left-radius: var(--radius-lg);
+  border-top-right-radius: var(--radius-lg);
+  background: var(--tier, var(--brand));
+}
+
+/* tier headings */
+.tier h4{ margin-top:.5rem; }
+
+/* tier metal gradients */
+.tier--bronze{   --tier: linear-gradient(90deg,#a97142,#d08b5b,#a97142); }
+.tier--silver{   --tier: linear-gradient(90deg,#c9c9c9,#eaeaea,#c9c9c9); }
+.tier--gold{     --tier: linear-gradient(90deg,#caa34a,#ffd966,#caa34a); }
+.tier--platinum{ --tier: linear-gradient(90deg,#94a3b8,#e2e8f0,#94a3b8); }
+
+/* tier hover */
+.tier:hover{
+  transform: translateY(-2px);
+  transition: transform .15s ease;
+}
+
+/* dark dividers */
+html[data-theme="dark"] hr{
+  border: 0;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, var(--panel-border), transparent);
+  opacity: .6;
+}
+
+/* muted text */
+.muted{ color: var(--muted); }
+
+/* dark header */
+html[data-theme="dark"] .site-header{
+  background:
+    radial-gradient(1200px 240px at 50% -40px, rgba(0,142,202,.25), transparent 70%),
+    linear-gradient(var(--bg-angle), var(--bg1), var(--bg2));
+  border-bottom: 1px solid var(--panel-border);
+}
+
+/* dark active link */
+html[data-theme="dark"] .primary-nav a.is-active{
+  box-shadow: inset 0 -2px 0 0 var(--brand);
+}
+
+/* dark animated background */
+html[data-theme="dark"] body::before,
+html[data-theme="dark"] body::after{
+  content:"";
+  position: fixed;
+  inset: -20vmax;
+  z-index: 0;
+  pointer-events: none;
+  opacity: .55;
+  filter: blur(40px);
+  mix-blend-mode: screen;
+}
+
+/* dark animated background — layer A */
+html[data-theme="dark"] body::before{
+  width: 120vmax;
+  height: 120vmax;
+  background:
+    radial-gradient(35% 35% at 30% 30%, rgba(0,142,202,.25), transparent 60%),
+    radial-gradient(40% 40% at 70% 20%, rgba(0,142,202,.18), transparent 65%);
+  animation: darkFloatA 28s ease-in-out infinite alternate;
+}
+
+/* dark animated background — layer B */
+html[data-theme="dark"] body::after{
+  width: 140vmax;
+  height: 140vmax;
+  background:
+    radial-gradient(45% 45% at 50% 70%, rgba(0,142,202,.22), transparent 70%),
+    radial-gradient(30% 30% at 80% 60%, rgba(17,167,239,.18), transparent 65%);
+  animation: darkFloatB 36s ease-in-out infinite alternate-reverse;
+}
+
+/* dark animated background — keyframes */
+@keyframes darkFloatA{
+  0%   { transform: translate3d(-6vmax,-4vmax,0) rotate(0deg) scale(1); }
+  50%  { transform: translate3d(4vmax,2vmax,0) rotate(10deg) scale(1.05); }
+  100% { transform: translate3d(8vmax,-2vmax,0) rotate(20deg) scale(1.08); }
+}
+@keyframes darkFloatB{
+  0%   { transform: translate3d(6vmax,4vmax,0) rotate(0deg) scale(1.05); }
+  50%  { transform: translate3d(-2vmax,-3vmax,0) rotate(-8deg) scale(1); }
+  100% { transform: translate3d(-7vmax,5vmax,0) rotate(-16deg) scale(1.03); }
+}
+
+/* dark animated background — stacking fix */
+html[data-theme="dark"] main,
+html[data-theme="dark"] header,
+html[data-theme="dark"] footer{
+  position: relative;
+  z-index: 1;
+}
+
+/* dark animated background — reduced motion */
+@media (prefers-reduced-motion: reduce){
+  html[data-theme="dark"] body::before,
+  html[data-theme="dark"] body::after{
+    animation: none;
+  }
+}
+
+/* wider panels */
+.card,
+.box{
+  padding: 2.5rem;
+  max-width: 960px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* wider grid gap */
+.grid.grid--auto{
+  gap: 2.5rem;
+}
+
+/* wider cards */
+.grid.grid--auto > .card{
+  flex: 1 1 420px;
+  max-width: 100%;
+}
+
+/* content width override on cards */
+.card.content,
+.box.content{
+  width: auto;
+  max-width: 1100px;
+}
+/* wider grid columns */
+.grid--auto{
+  grid-template-columns: repeat(auto-fit, minmax(420px, 1fr));
+  gap: 2.5rem; /* se ti piace lo spacing più ampio */
+}
+/* wider container (optional) */
+:root{
+  --max-w: 1200px;
+}
+/* dark header/footer borders */
+html[data-theme="dark"] header.section--panel{
+  border: 0;
+  border-bottom: 1px solid var(--panel-border);
+}
+html[data-theme="dark"] footer.section--panel{
+  border: 0;
+  border-top: 1px solid var(--panel-border);
+}
+/* dark recolor tokens */
+html[data-theme="dark"]{
+  --bg-1:#000000;
+  --bg-2:#031218;
+  --bg-3:#008eca;
+  --color-accent:#008eca;
+  --color-accent-hover:#11a7ef;
+  --nav-hover-bg: rgba(0,142,202,0.18);
+}
+/* dark layered background */
+html[data-theme="dark"] body{
+  background:
+    radial-gradient(1100px 700px at 12% 8%,  var(--bg-2) 0%, transparent 72%),
+    radial-gradient(900px 600px  at 88% 12%, var(--bg-3) 0%, transparent 72%),
+    radial-gradient(800px 520px  at 50% 100%, var(--bg-2) 0%, transparent 72%),
+    linear-gradient(125deg, var(--bg-1) 0%, var(--bg-2) 45%, var(--bg-3) 100%);
+}
+/* dark gradient balance */
+html[data-theme="dark"] body{
+  background:
+    radial-gradient(1100px 720px at 50% -8%,  rgba(0,142,202,.16) 0%, transparent 70%),
+    radial-gradient(1100px 700px at 12% 8%,   var(--bg-2) 0%, transparent 72%),
+    radial-gradient(900px  600px at 88% 12%,  var(--bg-3) 0%, transparent 72%),
+    radial-gradient(800px  520px at 50% 88%,  var(--bg-2) 0%, transparent 72%),
+    linear-gradient(125deg, var(--bg-1) 0%, var(--bg-2) 28%, var(--bg-3) 85%);
+}
+/* dark animated layers balance */
+html[data-theme="dark"] body::before,
+html[data-theme="dark"] body::after{
+  opacity: .6;
+  filter: blur(44px);
+}
+
+/* dark animated layer A */
+html[data-theme="dark"] body::before{
+  width: 160vmax;
+  height: 160vmax;
+  background:
+    radial-gradient(40% 40% at 32% 10%, rgba(0,142,202,.26), transparent 68%),
+    radial-gradient(38% 38% at 70% 18%, rgba(0,142,202,.18), transparent 70%);
+}
+
+/* dark animated layer B */
+html[data-theme="dark"] body::after{
+  width: 150vmax;
+  height: 150vmax;
+  background:
+    radial-gradient(46% 46% at 52% 64%, rgba(0,142,202,.22), transparent 72%),
+    radial-gradient(34% 34% at 80% 40%, rgba(17,167,239,.18), transparent 68%);
+}
+/* dark animated keyframes balance */
+@keyframes darkFloatA{
+  0%   { transform: translate3d(-4vmax,-6vmax,0) rotate(0deg)   scale(1.02); }
+  50%  { transform: translate3d( 3vmax, 2vmax,0) rotate(10deg)  scale(1.06); }
+  100% { transform: translate3d( 8vmax,-1vmax,0) rotate(18deg)  scale(1.08); }
+}
+@keyframes darkFloatB{
+  0%   { transform: translate3d( 6vmax, 5vmax,0) rotate(0deg)   scale(1.04); }
+  50%  { transform: translate3d(-2vmax,-2vmax,0) rotate(-8deg)  scale(1.00); }
+  100% { transform: translate3d(-7vmax, 6vmax,0) rotate(-16deg) scale(1.03); }
+}
