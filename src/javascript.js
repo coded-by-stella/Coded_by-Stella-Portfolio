@@ -130,3 +130,25 @@
   hardReset();
   mq.addEventListener?.('change', hardReset);
 })();
+
+/* equalize card widths on desktop */
+document.addEventListener('DOMContentLoaded', function(){
+  const mq = window.matchMedia('(min-width: 1000px)');
+
+  function equalizeGrid(grid){
+    const cards = Array.from(grid.querySelectorAll('.card'));
+    cards.forEach(c => c.style.width = '');
+    if(!mq.matches) return;
+    let max = 0;
+    cards.forEach(c => { max = Math.max(max, c.getBoundingClientRect().width); });
+    cards.forEach(c => { c.style.width = max + 'px'; });
+  }
+
+  function run(){
+    document.querySelectorAll('.grid--cards').forEach(equalizeGrid);
+  }
+
+  run();
+  window.addEventListener('resize', run, { passive:true });
+  mq.addEventListener('change', run);
+});
