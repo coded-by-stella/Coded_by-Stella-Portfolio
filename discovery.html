@@ -64,12 +64,17 @@
     <section class="section section--panel">
       <div class="container">
         <form
-          class="contact-form box content"
-          action="https://formspree.io/f/your-id"  
-          method="POST"
-          enctype="multipart/form-data"
-          aria-labelledby="discovery-title"
-        >
+  name="discovery"
+  method="POST"
+  data-netlify="true"
+  netlify-honeypot="bot-field"
+  enctype="multipart/form-data"
+  action="/thanks.html"
+  class="contact-form box content"
+  aria-labelledby="discovery-title">
+  <input type="hidden" name="form-name" value="discovery">
+
+
           <h2 id="discovery-title" class="center">Tell me about your business</h2>
 
           <!-- Essentials -->
@@ -222,12 +227,7 @@
 
           <hr>
 
-          <!-- Honeypot (antispam) -->
-          <div class="sr-only" aria-hidden="true">
-            <label>Leave this field empty
-              <input type="text" name="_gotcha" tabindex="-1" autocomplete="off" />
-            </label>
-          </div>
+      
 
           <!-- Hidden meta -->
           <input type="hidden" name="form_name" value="discovery_questionnaire" />
@@ -240,6 +240,14 @@
             <input type="checkbox" name="consent" value="ok" required />
             <span>I agree to be contacted about my request and to a 45-minute discovery call.</span>
           </label>
+
+          <!-- Netlify honeypot (antispam) -->
+<div class="sr-only" aria-hidden="true">
+  <label>Don’t fill this field
+    <input type="text" name="bot-field" tabindex="-1" autocomplete="off" />
+  </label>
+</div>
+
 
           <button type="submit" class="btn">Send questionnaire</button>
           <p class="footnote">I reply within 24h. No spam. This form only helps us choose the best package and a fair price for your needs.</p>
