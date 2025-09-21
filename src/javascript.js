@@ -1,4 +1,3 @@
-/* App shell - safe utilities and modules */
 (function(){
   'use strict';
 
@@ -179,7 +178,7 @@
 
 })();
 
-  /* Cookie banner logic (essential-only) */
+  
   onReady(function(){
     var banner = document.getElementById('cookie-banner');
     if(!banner) return;
@@ -187,13 +186,13 @@
     var KEY = 'cookieConsent';
     var firstBtn = banner.querySelector('#cb-accept'); // per focus iniziale
 
-    // Se già deciso in passato, nascondi
+  
     try {
       var stored = localStorage.getItem(KEY) || '';
       if(stored) { banner.style.display = 'none'; }
     } catch(e){}
 
-    // Bottoni
+  
     var btnAccept = document.getElementById('cb-accept');
     var btnReject = document.getElementById('cb-reject');
     var btnPrefs  = document.getElementById('cb-prefs');
@@ -206,7 +205,7 @@
     if(btnAccept) btnAccept.addEventListener('click', function(){ hide('accepted'); });
     if(btnReject) btnReject.addEventListener('click', function(){ hide('rejected'); });
 
-    // Preferences modal (informativo, solo essenziali)
+    
     var modal = document.getElementById('cookie-prefs');
     var btnClose = document.getElementById('cp-close');
     var lastFocus = null;
@@ -216,7 +215,7 @@
       lastFocus = document.activeElement;
       modal.hidden = false;
       btnClose && btnClose.focus();
-      // escape per chiudere
+     
       document.addEventListener('keydown', escClose);
     }
     function closePrefs(){
@@ -230,7 +229,7 @@
     if(btnPrefs) btnPrefs.addEventListener('click', openPrefs);
     if(btnClose) btnClose.addEventListener('click', closePrefs);
 
-    // Focus iniziale sul primo bottone per accessibilità
+   
     if(!stored && firstBtn && typeof firstBtn.focus === 'function'){
       setTimeout(function(){ firstBtn.focus(); }, 50);
     }
