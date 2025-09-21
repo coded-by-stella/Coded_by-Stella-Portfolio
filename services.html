@@ -1,660 +1,1343 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Services - Coded_by_Stella</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Services - Coded_by_Stella</title>
 
-  <!-- Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <!-- Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
 
-  <!-- Site CSS -->
-  <link rel="stylesheet" href="src/style.css" />
+    <!-- Site CSS -->
+    <link rel="stylesheet" href="src/style.css" />
 
-  <meta name="description" content="Services, packages and offers." />
-</head>
-<body>
+    <meta name="description" content="Services, packages and offers." />
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="section section--panel site-header">
+      <div class="container">
+        <div class="grid grid--header">
+          <h1 class="site-title">
+            <img
+              src="assets/favicon.ico"
+              alt="Coded_by_Stella logo"
+              class="logo-icon"
+            />
+            Coded_by_Stella
+            <span class="site-tagline"
+              >Marketing, websites, apps and projects engineered to win
+              clients.</span
+            >
+          </h1>
 
-<!-- Header -->
-<header class="section section--panel site-header">
-  <div class="container">
-    <div class="grid grid--header">
-      <h1 class="site-title">
-        <img src="assets/favicon.ico" alt="Coded_by_Stella logo" class="logo-icon">
-        Coded_by_Stella
-        <span class="site-tagline">Marketing, websites, apps and projects engineered to win clients.</span>
-      </h1>
+          <!-- Mobile menu button -->
+          <button
+            id="navToggle"
+            class="nav-toggle"
+            aria-expanded="false"
+            aria-controls="primaryNav"
+            aria-label="Open menu"
+          >
+            <span class="sr-only">Menu</span>
+            <span class="nav-toggle__bars" aria-hidden="true"></span>
+          </button>
 
-      <!-- Mobile menu button -->
-      <button id="navToggle" class="nav-toggle" aria-expanded="false" aria-controls="primaryNav" aria-label="Open menu">
-        <span class="sr-only">Menu</span>
-        <span class="nav-toggle__bars" aria-hidden="true"></span>
-      </button>
-
-      <!-- Primary navigation -->
-      <nav id="primaryNav" class="primary-nav" aria-label="Primary">
-        <ul class="nav-list">
-          <li><a href="index.html">About Stella</a></li>
-          <li><a href="services.html" class="is-active" aria-current="page">Services</a></li>
-          <li><a href="certifications.html">Certificates</a></li>
-          <li><a href="marketing-courses.html">Marketing Training</a></li>
-          <li><a href="projects.html">Portfolio</a></li>
-          <li><a href="contact.html">Contact me</a></li>
-        </ul>
-
-        <!-- Theme toggle -->
-        <button id="themeToggle" class="theme-toggle" type="button" aria-label="Switch theme" aria-pressed="false">
-          <span class="theme-toggle__icon" aria-hidden="true">🌙</span>
-          <span class="theme-toggle__text">Dark</span>
-        </button>
-      </nav>
-    </div>
-  </div>
-</header>
-
-<a class="sr-only sr-only-focusable" href="#main">Skip to content</a>
-
-<!-- Main -->
-<main id="main" class="section">
-  <div class="container">
-    <article class="content">
-      <h2 class="center">Services designed for entrepreneurs and freelancers that want to build a successful business.</h2>
-
-      <!-- Hero section -->
-      <section class="section" aria-labelledby="hero-title">
-        <div class="container content center">
-          <h1 id="hero-title">Marketing, websites, apps and projects engineered to win clients.</h1>
-          <p class="m-0">I build clean, fast websites and simple marketing systems that bring you more clients, not just pretty pages.</p>
-          <figure class="hero__figure" aria-hidden="true">
-            <img src="assets/hero-services.jpg" alt="" />
-          </figure>
-        </div>
-      </section>
-
-      <!-- Problems section -->
-      <section class="section section--panel" aria-labelledby="problems-title">
-        <div class="container">
-          <div class="box content">
-            <h2 id="problems-title" class="center">If this sounds exactly like your situation...</h2>
-            <ul class="stack problems-list">
+          <!-- Primary navigation -->
+          <nav id="primaryNav" class="primary-nav" aria-label="Primary">
+            <ul class="nav-list">
+              <li><a href="index.html">About Stella</a></li>
               <li>
-                <strong>“We paid for a website, but no one contacts us.”</strong><br>
-                You check your inbox every day and it’s still empty.
-                <em>I create websites built to convert visitors into real leads, with clear calls to action and messages that make people click.</em>
+                <a href="services.html" class="is-active" aria-current="page"
+                  >Services</a
+                >
               </li>
-
-              <li>
-                <strong>“People visit our site… then leave without doing anything.”</strong><br>
-                You see traffic in your stats, but zero calls or emails.
-                <em>I design user-friendly layouts that guide people step by step, from curiosity to contact.</em>
-              </li>
-
-              <li>
-                <strong>“We’re a small business, and every euro has to bring results.”</strong><br>
-                You can’t afford to waste money on a website that just looks pretty.
-                <em>I build sites that focus on conversions, turning visits into sales, so every cent you invest works harder for you.</em>
-              </li>
-
-              <li>
-                <strong>“We’re a startup and need to grow fast with limited time and people.”</strong><br>
-                No marketing team, just a dream and a deadline.
-                <em>I deliver complete websites + launch systems that save time, attract clients, and let you focus on your product.</em>
-              </li>
-
-              <li>
-                <strong>“We’re busy running the business, not managing websites.”</strong><br>
-                You’re juggling orders, calls, and people; the site is always last on the list.
-                <em>I handle design, content, updates, and monthly care, so your team can focus on what they do best.</em>
-              </li>
-
-              <li>
-                <strong>“We want to look as professional as bigger competitors.”</strong><br>
-                You know your product is great but your website doesn’t show it yet.
-                <em>I create clean, modern websites that build trust instantly, so you look like the strong brand you really are.</em>
-              </li>
-
-              <li>
-                <strong>“We’re losing clients to competitors with better-looking sites.”</strong><br>
-                They look pro, you feel invisible.
-                <em>I refresh your brand look so you stand out from the first second.</em>
-              </li>
-
-              <li>
-                <strong>“We don’t have time or skills to update our site.”</strong><br>
-                You’re busy running your business, not fixing plugins.
-                <em>My Monthly Growth Engine keeps your site fast, secure, and worry-free.</em>
-              </li>
+              <li><a href="certifications.html">Certificates</a></li>
+              <li><a href="marketing-courses.html">Marketing Training</a></li>
+              <li><a href="projects.html">Portfolio</a></li>
+              <li><a href="contact.html">Contact me</a></li>
             </ul>
 
-            <p class="center">
-  <strong>You are doing the work.</strong>
-  Now you just need a fast, conversion focused website, a clear offer with persuasive copy, a simple funnel with booking and email follow up, and a monthly growth plan tailored to your business.
-</p>
-          </div>
+            <!-- Theme toggle -->
+            <button
+              id="themeToggle"
+              class="theme-toggle"
+              type="button"
+              aria-label="Switch theme"
+              aria-pressed="false"
+            >
+              <span class="theme-toggle__icon" aria-hidden="true">🌙</span>
+              <span class="theme-toggle__text">Dark</span>
+            </button>
+          </nav>
         </div>
-      </section>
-
-      <div class="center">
-        <a href="discovery.html" class="btn">
-          📜 Fill the questionnaire & book your free 45-minute 📞 call for a free quote ✅
-        </a>
       </div>
+    </header>
 
-      <!-- Why and results section -->
-<section class="section" aria-labelledby="why-results-title">
-  <div class="container grid grid--auto">
+    <a class="sr-only sr-only-focusable" href="#main">Skip to content</a>
 
-    <!-- Why work with me block -->
-    <div class="box content">
-      <h3 id="why-results-title">Why work with me</h3>
-      <p><strong>Frontend and marketing:</strong> I design and code fast pages and write conversion focused copy that turns attention into action.</p>
-      <p><strong>Clarity over jargon:</strong> plain headlines, proof and clear calls to action so people understand you in seconds.</p>
-      <p><strong>Done for you:</strong> one partner from strategy and copy to design, build, and launch with zero work on your side.</p>
-      <p><strong>Reliable delivery:</strong> defined milestones, live previews in browser, on time handoff and clean documentation of what is shipped.</p>
-    </div>
+    <!-- Main -->
+    <main id="main" class="section">
+      <div class="container">
+        <article class="content">
+          <h2 class="center">
+            Services designed for entrepreneurs and freelancers that want to
+            build a successful business.
+          </h2>
 
-    <!-- Results you can expect block -->
-    <div class="box content">
-      <h3>Results you can expect</h3>
-      <p><strong>Faster site and better mobile experience:</strong> quick loads and layouts that fit every screen so visitors stay and explore.</p>
-      <p><strong>Clear message that builds trust:</strong> your offer is understood fast with proof and an obvious next step.</p>
-      <p><strong>More form fills and calls:</strong> fewer steps and stronger calls to action so more people book or contact you.</p>
-      <p><strong>Zero maintenance for your team:</strong> I handle updates and changes after launch so you focus on the business.</p>
-    </div>
-
-  </div>
-</section>
-
-
-      <div class="center">
-        <a href="guarantee.html" class="btn" aria-label="See the Zero Risk, 100% Money Back guarantee">
-          ✅ See the <strong>“Zero Risk, 100% Money Back”</strong> Guarantee ✅
-        </a>
-      </div>
-
-  
-      <!-- Process section -->
-      <section class="section" id="process" aria-labelledby="process-title">
-        <div class="container">
-          <h2 id="process-title" class="center">How it works: from first "Hello" to full launch</h2>
-          <div class="grid grid--auto grid--cards">
-            <div class="box">
-              <h3>1. Discovery Call</h3>
-              <p>We start with a relaxed video call where you share your vision, your audience, and your goals.</p>
+          <!-- Hero section -->
+          <section class="section" aria-labelledby="hero-title">
+            <div class="container content center">
+              <h1 id="hero-title">
+                Marketing, websites, apps and projects engineered to win
+                clients.
+              </h1>
+              <p class="m-0">
+                I build clean, fast websites and simple marketing systems that
+                bring you more clients, not just pretty pages.
+              </p>
+              <figure class="hero__figure" aria-hidden="true">
+                <img src="assets/hero-services.jpg" alt="" />
+              </figure>
             </div>
-            <div class="box">
-              <h3>2. Plan & Copy</h3>
-              <p>I map out your future website and craft words that speak to your ideal clients.</p>
+          </section>
+
+          <!-- Problems section -->
+          <section
+            class="section section--panel"
+            aria-labelledby="problems-title"
+          >
+            <div class="container">
+              <div class="box content">
+                <h2 id="problems-title" class="center">
+                  If this sounds exactly like your situation...
+                </h2>
+                <ul class="stack problems-list">
+                  <li>
+                    <strong
+                      >“We paid for a website, but no one contacts us.”</strong
+                    ><br />
+                    You check your inbox every day and it’s still empty.
+                    <em
+                      >I create websites built to convert visitors into real
+                      leads, with clear calls to action and messages that make
+                      people click.</em
+                    >
+                  </li>
+
+                  <li>
+                    <strong
+                      >“People visit our site… then leave without doing
+                      anything.”</strong
+                    ><br />
+                    You see traffic in your stats, but zero calls or emails.
+                    <em
+                      >I design user-friendly layouts that guide people step by
+                      step, from curiosity to contact.</em
+                    >
+                  </li>
+
+                  <li>
+                    <strong
+                      >“We’re a small business and every euro has to bring
+                      results.”</strong
+                    ><br />
+                    You can’t afford to waste money on a website that just looks
+                    pretty.
+                    <em
+                      >I build sites that focus on conversions, turning visits
+                      into sales, so every cent you invest works harder for
+                      you.</em
+                    >
+                  </li>
+
+                  <li>
+                    <strong
+                      >“We’re a startup and need to grow fast with limited time
+                      and people.”</strong
+                    ><br />
+                    No marketing team, just a dream and a deadline.
+                    <em
+                      >I deliver complete websites + launch systems that save
+                      time, attract clients, and let you focus on your
+                      product.</em
+                    >
+                  </li>
+
+                  <li>
+                    <strong
+                      >“We’re busy running the business, not managing
+                      websites.”</strong
+                    ><br />
+                    You’re juggling orders, calls, and people; the site is
+                    always last on the list.
+                    <em
+                      >I handle design, content, updates, and monthly care, so
+                      your team can focus on what they do best.</em
+                    >
+                  </li>
+
+                  <li>
+                    <strong
+                      >“We want to look as professional as bigger
+                      competitors.”</strong
+                    ><br />
+                    You know your product is great but your website doesn’t show
+                    it yet.
+                    <em
+                      >I create clean, modern websites that build trust
+                      instantly, so you look like the strong brand you really
+                      are.</em
+                    >
+                  </li>
+
+                  <li>
+                    <strong
+                      >“We’re losing clients to competitors with better-looking
+                      sites.”</strong
+                    ><br />
+                    They look pro, you feel invisible.
+                    <em
+                      >I refresh your brand look so you stand out from the first
+                      second.</em
+                    >
+                  </li>
+
+                  <li>
+                    <strong
+                      >“We don’t have time or skills to update our
+                      site.”</strong
+                    ><br />
+                    You’re busy running your business, not fixing plugins.
+                    <em
+                      >My Monthly Growth Engine keeps your site fast, secure,
+                      and worry-free.</em
+                    >
+                  </li>
+                </ul>
+
+                <p class="center">
+                  <strong>You are doing the work.</strong>
+                  Now you just need a fast, conversion focused website, a clear
+                  offer with persuasive copy, a simple funnel with booking and
+                  email follow up, and a monthly growth plan tailored to your
+                  business.
+                </p>
+              </div>
             </div>
-            <div class="box">
-              <h3>3. Design & Build</h3>
-              <p>I turn the plan into a clean, fast, mobile friendly site. You get live previews as it grows.</p>
+          </section>
+
+          <div class="center">
+            <a href="discovery.html" class="btn">
+              📜 Fill the questionnaire & book your free 45-minute 📞 call for a
+              free quote ✅
+            </a>
+          </div>
+
+          <!-- Why and results section -->
+          <section class="section" aria-labelledby="why-results-title">
+            <div class="container grid grid--auto">
+              <!-- Why work with me block -->
+              <div class="box content">
+                <h3 id="why-results-title">Why work with me</h3>
+                <p>
+                  <strong>Frontend and marketing:</strong> I design and code
+                  fast pages and write conversion focused copy that turns
+                  attention into action.
+                </p>
+                <p>
+                  <strong>Clarity over jargon:</strong> plain headlines, proof
+                  and clear calls to action so people understand you in seconds.
+                </p>
+                <p>
+                  <strong>Done for you:</strong> one partner from strategy and
+                  copy to design, build, and launch with zero work on your side.
+                </p>
+                <p>
+                  <strong>Reliable delivery:</strong> defined milestones, live
+                  previews in browser, on time handoff and clean documentation
+                  of what is shipped.
+                </p>
+              </div>
+
+              <!-- Results you can expect block -->
+              <div class="box content">
+                <h3>Results you can expect</h3>
+                <p>
+                  <strong>Faster site and better mobile experience:</strong>
+                  quick loads and layouts that fit every screen so visitors stay
+                  and explore.
+                </p>
+                <p>
+                  <strong>Clear message that builds trust:</strong> your offer
+                  is understood fast with proof and an obvious next step.
+                </p>
+                <p>
+                  <strong>More form fills and calls:</strong> fewer steps and
+                  stronger calls to action so more people book or contact you.
+                </p>
+                <p>
+                  <strong>Zero maintenance for your team:</strong> I handle
+                  updates and changes after launch so you focus on the business.
+                </p>
+              </div>
             </div>
-            <div class="box">
-              <h3>4. Launch & Support</h3>
-              <p>We go live together, and you get 1 month of post launch support to start attracting clients right away.</p>
+          </section>
+
+          <div class="center">
+            <a
+              href="guarantee.html"
+              class="btn"
+              aria-label="See the Zero Risk, 100% Money Back guarantee"
+            >
+              ✅ See the <strong>“Zero Risk, 100% Money Back”</strong> Guarantee
+              ✅
+            </a>
+          </div>
+
+          <!-- Process section -->
+          <section class="section" id="process" aria-labelledby="process-title">
+            <div class="container">
+              <h2 id="process-title" class="center">
+                How it works: from first "Hello" to full launch
+              </h2>
+              <div class="grid grid--auto grid--cards">
+                <div class="box">
+                  <h3>1. Discovery Call</h3>
+                  <p>
+                    We start with a relaxed video call where you share your
+                    vision, your audience, and your goals.
+                  </p>
+                </div>
+                <div class="box">
+                  <h3>2. Plan & Copy</h3>
+                  <p>
+                    I map out your future website and craft words that speak to
+                    your ideal clients.
+                  </p>
+                </div>
+                <div class="box">
+                  <h3>3. Design & Build</h3>
+                  <p>
+                    I turn the plan into a clean, fast, mobile friendly site.
+                    You get live previews as it grows.
+                  </p>
+                </div>
+                <div class="box">
+                  <h3>4. Launch & Support</h3>
+                  <p>
+                    We go live together, and you get 1 month of post launch
+                    support to start attracting clients right away.
+                  </p>
+                </div>
+              </div>
             </div>
+          </section>
+
+          <!-- Business Development section -->
+          <section
+            class="section"
+            id="business-development"
+            aria-labelledby="business-dev-title"
+          >
+            <div class="container">
+              <h2 id="business-dev-title" class="center">
+                💼 Business Development
+              </h2>
+
+              <!-- Section copy -->
+              <div
+                class="content center"
+                style="max-width: 860px; margin: 0 auto"
+              >
+                <p class="overline">Build the foundation before you market</p>
+                <h3 class="center">
+                  Clarity on brand, offer, positioning and go-to-market
+                </h3>
+                <p class="subtitle">
+                  We define who you serve, why you win, what you sell first and
+                  how you’ll launch it, so every campaign works harder.
+                </p>
+              </div>
+
+              <!-- PAS style copy -->
+              <div
+                class="content"
+                style="max-width: 900px; margin: 1rem auto 2rem"
+              >
+                <p>
+                  <strong>What’s the problem?</strong> Marketing without a tight
+                  offer, positioning and plan turns into random tactics and
+                  inconsistent results.
+                </p>
+                <p>
+                  <strong>Where does it lead...</strong> Scattered messaging,
+                  the wrong audience, mispriced services, slow launches and
+                  budget wasted on guesswork.
+                </p>
+                <p>
+                  <strong>You don’t have to figure this out alone.</strong> I
+                  turn your ideas into a focused strategy with clear brand,
+                  offer, pricing and a practical 90-day roadmap you can execute
+                  with confidence.
+                </p>
+              </div>
+
+              <!-- Packages grid -->
+              <div class="grid grid--cards grid--2cols">
+                <!-- Business Dev Bronze -->
+                <article
+                  class="card content tier tier--bronze"
+                  aria-labelledby="bd-bronze-title"
+                >
+                  <h4 id="bd-bronze-title" class="center">
+                    Bronze - Business Foundations Sprint
+                  </h4>
+                  <p>
+                    Start a new business or get unstuck with fast clarity on
+                    audience, value and what to sell first.
+                  </p>
+                  <div class="stack">
+                    <p>
+                      - I run a focused discovery on goals, constraints and
+                      market reality, so decisions are grounded, not hopeful.
+                    </p>
+                    <p>
+                      - I define your ideal customer snapshot and the core
+                      problem you solve or desires you fulfill with your
+                      product/service.
+                    </p>
+                    <p>
+                      - I craft a positioning one-liner and value promise you
+                      can use everywhere.
+                    </p>
+                    <p>
+                      - I outline a simple flagship offer with pricing
+                      hypotheses and a risk-reversing guarantee angle.
+                    </p>
+                    <p>
+                      - I leave you with the next best actions to move from idea
+                      to traction fast.
+                    </p>
+                  </div>
+                  <p class="center">
+                    <a
+                      href="discovery.html?service=businessdev&tier=bronze"
+                      class="btn"
+                      >Start Business Foundations Sprint</a
+                    >
+                  </p>
+                </article>
+
+                <!-- Business Dev Silver -->
+                <article
+                  class="card content tier tier--silver"
+                  aria-labelledby="bd-silver-title"
+                >
+                  <h4 id="bd-silver-title" class="center">
+                    Silver - Brand & Offer Blueprint
+                  </h4>
+                  <p>
+                    Turn clarity into a usable brand story and a sellable offer
+                    stack.
+                  </p>
+                  <div class="stack">
+                    <p>
+                      - Everything in Bronze, plus a naming and tagline workshop
+                      to anchor your identity.
+                    </p>
+                    <p>
+                      - I write your messaging house: elevator line, “why us,”
+                      proof angles and objection answers.
+                    </p>
+                    <p>
+                      - I design your offer stack: core offer, quick-start entry
+                      and a logical upsell or add-on.
+                    </p>
+                    <p>
+                      - I map the first customer journey from awareness to
+                      booked call, including the key trust assets needed.
+                    </p>
+                    <p>
+                      - I provide a visual direction moodboard so your future
+                      creative stays consistent.
+                    </p>
+                  </div>
+                  <p class="center">
+                    <a
+                      href="discovery.html?service=businessdev&tier=silver"
+                      class="btn"
+                      >Get the Brand & Offer Blueprint</a
+                    >
+                  </p>
+                </article>
+
+                <!-- Business Dev Gold -->
+                <article
+                  class="card content tier tier--gold"
+                  aria-labelledby="bd-gold-title"
+                >
+                  <h4 id="bd-gold-title" class="center">
+                    Gold - Go-to-Market Plan
+                  </h4>
+                  <p>
+                    A practical 90-day plan to launch with confidence and
+                    measure traction.
+                  </p>
+                  <div class="stack">
+                    <p>
+                      - Everything in Silver, plus a channel strategy that fits
+                      your audience and resources, not a cookie-cutter playbook.
+                    </p>
+                    <p>
+                      - I create a 90-day calendar with weekly actions for
+                      pre-launch, launch and post-launch momentum.
+                    </p>
+                    <p>
+                      - I prepare sales assets that shorten time to “yes”:
+                      discovery call script, follow-up emails and a proposal
+                      template.
+                    </p>
+                    <p>
+                      - I set your baseline KPIs and a simple lead log
+                      (spreadsheet or light in-site page) so results are visible
+                      without maintenance.
+                    </p>
+                    <p>
+                      - I list the minimal tech stack (booking, inbox rules,
+                      tracking) so tools help rather than slow you down.
+                    </p>
+                  </div>
+                  <p class="center">
+                    <a
+                      href="discovery.html?service=businessdev&tier=gold"
+                      class="btn"
+                      >Get your Go-to-Market Plan</a
+                    >
+                  </p>
+                </article>
+
+                <!-- Business Dev Platinum -->
+                <article
+                  class="card content tier tier--platinum"
+                  aria-labelledby="bd-platinum-title"
+                >
+                  <h4 id="bd-platinum-title" class="center">
+                    Platinum - Business Operating System
+                  </h4>
+                  <p>
+                    Scale with clarity: offers, org, processes and numbers
+                    working together.
+                  </p>
+                  <div class="stack">
+                    <p>
+                      - Everything in Gold, plus a multi-offer strategy map for
+                      segments, pricing tiers and guarantees that protect
+                      margin.
+                    </p>
+                    <p>
+                      - I outline your lean org chart, write role scorecards and
+                      define the first key hire profile.
+                    </p>
+                    <p>
+                      - I deliver a starter SOP pack for repeatables (lead
+                      handling, proposals, handoffs) to remove friction.
+                    </p>
+                    <p>
+                      - I build a simple unit-economics model (CAC, LTV ranges,
+                      payback) so growth decisions are data-aware.
+                    </p>
+                    <p>
+                      - I prepare an investor/partner one-pager and a founder
+                      narrative deck outline for external conversations.
+                    </p>
+                  </div>
+                  <p class="center">
+                    <a
+                      href="discovery.html?service=businessdev&tier=platinum"
+                      class="btn"
+                      >Build My Operating System (Platinum)</a
+                    >
+                  </p>
+                </article>
+              </div>
+            </div>
+          </section>
+
+          <div class="center">
+            <a href="discovery.html" class="btn">
+              📜 Fill the questionnaire & book your free 45-minute 📞 call for a
+              free quote ✅
+            </a>
           </div>
-        </div>
-      </section>
 
-      <!-- Business Development section -->
-<section class="section" id="business-development" aria-labelledby="business-dev-title">
-  <div class="container">
-    <h2 id="business-dev-title" class="center">💼 Business Development</h2>
+          <!-- Marketing Systems section -->
+          <section
+            class="section"
+            id="marketing-systems"
+            aria-labelledby="marketing-systems-title"
+          >
+            <div class="container">
+              <h2 id="marketing-systems-title" class="center">
+                💵 Choose the Package you need: Marketing Systems
+              </h2>
 
-    <!-- Section copy -->
-    <div class="content center" style="max-width:860px;margin:0 auto;">
-      <p class="overline">Build the foundation before you market</p>
-      <h3 class="center">Clarity on brand, offer, positioning and go-to-market</h3>
-      <p class="subtitle">We define who you serve, why you win, what you sell first and how you’ll launch it, so every campaign works harder.</p>
-    </div>
+              <!-- Marketing copy block -->
+              <div
+                class="content center"
+                style="max-width: 860px; margin: 0 auto"
+              >
+                <p class="overline">Stop posting and praying...</p>
+                <h3 class="center">Turn attention into leads on autopilot</h3>
+                <p class="subtitle">
+                  From first touch to booked call with a clear offer, persuasive
+                  copy and a simple funnel.
+                </p>
+              </div>
 
-    <!-- PAS style copy -->
-    <div class="content" style="max-width:900px;margin:1rem auto 2rem;">
-      <p><strong>What’s the problem?</strong> Marketing without a tight offer, positioning and plan turns into random tactics and inconsistent results.</p>
-      <p><strong>Where does it lead...</strong> Scattered messaging, the wrong audience, mispriced services, slow launches and budget wasted on guesswork.</p>
-      <p><strong>You don’t have to figure this out alone.</strong> I turn your ideas into a focused strategy with clear brand, offer, pricing and a practical 90-day roadmap you can execute with confidence.</p>
-    </div>
+              <!-- PAS style copy -->
+              <div
+                class="content"
+                style="max-width: 900px; margin: 1rem auto 2rem"
+              >
+                <p>
+                  <strong>What is the problem?</strong> Traffic without
+                  conversions wastes budget and time.
+                </p>
+                <p>
+                  <strong>Where does it lead...</strong> Overloaded team,
+                  unclear offers, channels out of sync. Every launch restarts
+                  from zero.
+                </p>
+                <p>
+                  <strong
+                    >You do not have to drown in this chaos. Here is your
+                    lifeline, the only solution you truly need.</strong
+                  >
+                  A lean system with offer, landing page, emails and posts or
+                  ads that guides people to book. Fewer steps and measurable
+                  results.
+                </p>
+              </div>
 
-    <!-- Packages grid -->
-    <div class="grid grid--cards grid--2cols">
+              <!-- Packages grid -->
+              <div class="grid grid--cards grid--2cols">
+                <!-- Marketing Bronze card -->
+                <article
+                  class="card content tier tier--bronze"
+                  aria-labelledby="mk-bronze-title"
+                >
+                  <h4 id="mk-bronze-title" class="center">
+                    Bronze - Launch Essentials
+                  </h4>
+                  <p>
+                    Start generating qualified inquiries for one clear offer
+                    with a lean, testable funnel.
+                  </p>
+                  <div class="stack">
+                    <p>
+                      - I sharpen your offer and ideal customer target so every
+                      message speaks to real interested buyers.
+                    </p>
+                    <p>
+                      - I build a focused landing that moves visitors from
+                      curiosity to booking without friction.
+                    </p>
+                    <p>
+                      - I write and set up a 3-email mini sequence, announce,
+                      follow-up and last call, to convert warm attention.
+                    </p>
+                    <p>
+                      - I activate one acquisition channel (Meta Ads or Google
+                      Search) with two testable direct response ads.
+                    </p>
+                    <p>
+                      - I connect scheduling and basic tracking so leads and
+                      booked calls are measurable from day one.
+                    </p>
+                  </div>
+                  <p class="center">
+                    <a
+                      href="discovery.html?service=marketing&tier=bronze"
+                      class="btn"
+                      >Get Your Launch Essentials System
+                    </a>
+                  </p>
+                </article>
 
-      <!-- Business Dev Bronze -->
-      <article class="card content tier tier--bronze" aria-labelledby="bd-bronze-title">
-        <h4 id="bd-bronze-title" class="center">Bronze - Foundations Sprint</h4>
-        <p>Get unstuck with fast clarity on audience, value and what to sell first.</p>
-        <div class="stack">
-          <p>- I run a focused discovery on goals, constraints and market reality, so decisions are grounded, not hopeful.</p>
-          <p>- I define your ideal customer snapshot and the core problem you solve in their words.</p>
-          <p>- I craft a positioning one-liner and value promise you can use everywhere.</p>
-          <p>- I outline a simple flagship offer with pricing hypotheses and a risk-reversing guarantee angle.</p>
-          <p>- I leave you with the next best actions to move from idea to traction fast.</p>
-        </div>
-        <p class="center"><a href="discovery.html?service=businessdev&tier=bronze" class="btn">Start Business Foundations (Bronze)</a></p>
-      </article>
+                <!-- Marketing Silver card -->
+                <article
+                  class="card content tier tier--silver"
+                  aria-labelledby="mk-silver-title"
+                >
+                  <h4 id="mk-silver-title" class="center">
+                    Silver - Launch & Nurture
+                  </h4>
+                  <p>
+                    Warm up prospects across more touchpoints and reduce time to
+                    booked call.
+                  </p>
+                  <div class="stack">
+                    <p>
+                      - Everything in Bronze, plus a 5-email nurture that tells
+                      your story, handles objections and adds proof.
+                    </p>
+                    <p>
+                      - A light lead magnet one-pager to capture emails from
+                      colder traffic.
+                    </p>
+                    <p>
+                      - Three “occasion” emails (holiday, anniversary, event) to
+                      spark easy wins without heavy production.
+                    </p>
+                    <p>
+                      - Acquisition on two channels (Meta + Google) with four
+                      creative direct response variations and basic targeting.
+                    </p>
+                    <p>
+                      - Professional presence polish: LinkedIn company page and
+                      Google Business Profile tuned for credibility and calls.
+                    </p>
+                  </div>
+                  <p class="center">
+                    <a
+                      href="discovery.html?service=marketing&tier=silver"
+                      class="btn"
+                      >Get Your Launch & Nurture System</a
+                    >
+                  </p>
+                </article>
 
-      <!-- Business Dev Silver -->
-      <article class="card content tier tier--silver" aria-labelledby="bd-silver-title">
-        <h4 id="bd-silver-title" class="center">Silver - Brand & Offer Blueprint</h4>
-        <p>Turn clarity into a usable brand story and a sellable offer stack.</p>
-        <div class="stack">
-          <p>- Everything in Bronze, plus a naming and tagline workshop to anchor your identity.</p>
-          <p>- I write your messaging house: elevator line, “why us,” proof angles and objection answers.</p>
-          <p>- I design your offer stack: core offer, quick-start entry and a logical upsell or add-on.</p>
-          <p>- I map the first customer journey from awareness to booked call, including the key trust assets needed.</p>
-          <p>- I provide a visual direction moodboard so your future creative stays consistent.</p>
-        </div>
-        <p class="center"><a href="discovery.html?service=businessdev&tier=silver" class="btn">Get the Blueprint (Silver)</a></p>
-      </article>
+                <!-- Marketing Gold card -->
+                <article
+                  class="card content tier tier--gold"
+                  aria-labelledby="mk-gold-title"
+                >
+                  <h4 id="mk-gold-title" class="center">
+                    Gold - Always-On Engine
+                  </h4>
+                  <p>
+                    Build momentum with campaigns that attract, convert and
+                    reactivate, week after week.
+                  </p>
+                  <div class="stack">
+                    <p>
+                      - Everything in Silver, plus a dormant-client reactivation
+                      (email + light retargeting) to recover hidden revenue.
+                    </p>
+                    <p>
+                      - A product/service launch pack orchestrated across
+                      pre-launch, launch and post-launch for predictable spikes.
+                    </p>
+                    <p>
+                      - A hiring campaign: a clear job page with screening
+                      questions, plus ads that attract the right applicants.
+                    </p>
+                    <p>
+                      - A post-purchase flow that asks for reviews and referrals
+                      at the perfect moment.
+                    </p>
+                    <p>
+                      - A mini CRM page inside your site, leads auto-log from
+                      forms and bookings, quick filters and CSV export.
+                    </p>
+                    <p>
+                      - Structured retargeting and simple A/B tests for ads and
+                      emails to keep performance improving.
+                    </p>
+                  </div>
+                  <p class="center">
+                    <a
+                      href="discovery.html?service=marketing&tier=gold"
+                      class="btn"
+                      >Get Your Always-On Engine System</a
+                    >
+                  </p>
+                </article>
 
-      <!-- Business Dev Gold -->
-      <article class="card content tier tier--gold" aria-labelledby="bd-gold-title">
-        <h4 id="bd-gold-title" class="center">Gold - Go-to-Market Plan</h4>
-        <p>A practical 90-day plan to launch with confidence and measure traction.</p>
-        <div class="stack">
-          <p>- Everything in Silver, plus a channel strategy that fits your audience and resources, not a cookie-cutter playbook.</p>
-          <p>- I create a 90-day calendar with weekly actions for pre-launch, launch and post-launch momentum.</p>
-          <p>- I prepare sales assets that shorten time to “yes”: discovery call script, follow-up emails and a proposal template.</p>
-          <p>- I set your baseline KPIs and a simple lead log (spreadsheet or light in-site page) so results are visible without maintenance.</p>
-          <p>- I list the minimal tech stack (booking, inbox rules, tracking) so tools help rather than slow you down.</p>
-        </div>
-        <p class="center"><a href="discovery.html?service=businessdev&tier=gold" class="btn">Plan My Go-to-Market (Gold)</a></p>
-      </article>
+                <!-- Marketing Platinum card -->
+                <article
+                  class="card content tier tier--platinum"
+                  aria-labelledby="mk-platinum-title"
+                >
+                  <h4 id="mk-platinum-title" class="center">
+                    Platinum - Omnichannel Scale
+                  </h4>
+                  <p>
+                    Everything you need to scale multiple offers and markets
+                    while staying on brand and in control.
+                  </p>
+                  <div class="stack">
+                    <p>
+                      - Everything in Gold, plus a high-impact “lumpy mail” pack
+                      for top prospects, a tailored business presentation
+                      letter, a branded gift, an offer brochure, a reviews
+                      booklet and a guarantee certificate, written, designed and
+                      coordinated end-to-end.
+                    </p>
+                    <p>
+                      - Multi-offer segmentation with dedicated landings and
+                      branched emails based on segment and behavior.
+                    </p>
+                    <p>
+                      - Brand identity (or refresh): logo, palette and a punchy
+                      tagline applied across site and social profiles.
+                    </p>
+                    <p>
+                      - Ads expansion with advanced audiences, bigger budgets
+                      and high-impact creative variations that scale.
+                    </p>
+                    <p>
+                      - Optional internationalization: a second language
+                      (EN/IT/NO/DE/FR) across key pages, emails and funnels.
+                    </p>
+                    <p>
+                      - A simple KPI snapshot (leads & bookings) with
+                      month-over-month comparison, zero extra work for your
+                      team.
+                    </p>
+                  </div>
+                  <p class="center">
+                    <a
+                      href="discovery.html?service=marketing&tier=platinum"
+                      class="btn"
+                      >Get Your Omnichannel Scale System
+                    </a>
+                  </p>
+                </article>
+              </div>
+            </div>
+          </section>
 
-      <!-- Business Dev Platinum -->
-      <article class="card content tier tier--platinum" aria-labelledby="bd-platinum-title">
-        <h4 id="bd-platinum-title" class="center">Platinum - Business Operating System</h4>
-        <p>Scale with clarity: offers, org, processes and numbers working together.</p>
-        <div class="stack">
-          <p>- Everything in Gold, plus a multi-offer strategy map for segments, pricing tiers and guarantees that protect margin.</p>
-          <p>- I outline your lean org chart, write role scorecards and define the first key hire profile.</p>
-          <p>- I deliver a starter SOP pack for repeatables (lead handling, proposals, handoffs) to remove friction.</p>
-          <p>- I build a simple unit-economics model (CAC, LTV ranges, payback) so growth decisions are data-aware.</p>
-          <p>- I prepare an investor/partner one-pager and a founder narrative deck outline for external conversations.</p>
-        </div>
-        <p class="center"><a href="discovery.html?service=businessdev&tier=platinum" class="btn">Build My Operating System (Platinum)</a></p>
-      </article>
-
-    </div>
-  </div>
-</section>
-
-
-      <div class="center">
-        <a href="discovery.html" class="btn">
-          📜 Fill the questionnaire & book your free 45-minute 📞 call for a free quote ✅
-        </a>
-      </div>
-
-      <!-- Marketing Systems section -->
-      <section class="section" id="marketing-systems" aria-labelledby="marketing-systems-title">
-        <div class="container">
-          <h2 id="marketing-systems-title" class="center">💵 Choose the Package you need: Marketing Systems</h2>
-
-          <!-- Marketing copy block -->
-          <div class="content center" style="max-width:860px;margin:0 auto;">
-            <p class="overline">Stop posting and praying...</p>
-            <h3 class="center">Turn attention into leads on autopilot</h3>
-            <p class="subtitle">From first touch to booked call with a clear offer, persuasive copy, and a simple funnel.</p>
+          <div class="center">
+            <a href="discovery.html" class="btn">
+              📜 Fill the questionnaire & book your free 45-minute 📞 call for a
+              free quote ✅
+            </a>
           </div>
 
-          <!-- PAS style copy -->
-          <div class="content" style="max-width:900px;margin:1rem auto 2rem;">
-            <p><strong>What is the problem?</strong> Traffic without conversions wastes budget and time.</p>
-            <p><strong>Where does it lead...</strong> Overloaded team, unclear offers, channels out of sync. Every launch restarts from zero.</p>
-            <p><strong>You do not have to drown in this chaos. Here is your lifeline, the only solution you truly need.</strong> A lean system with offer, landing page, emails, and posts or ads that guides people to book. Fewer steps and measurable results with Coded_by_Stella.</p>
+          <!-- Web Development section -->
+          <section
+            class="section"
+            id="web-development"
+            aria-labelledby="webdev-title"
+          >
+            <div class="container">
+              <h2 id="webdev-title" class="center">💻 Web Development</h2>
+
+              <!-- Section copy -->
+              <div
+                class="content center"
+                style="max-width: 860px; margin: 0 auto"
+              >
+                <p class="overline">Clean code, commercial outcomes</p>
+                <h3 class="center">
+                  Fast, reliable front-ends that turn visits into bookings and
+                  sales
+                </h3>
+                <p class="subtitle">
+                  I design and build modular interfaces in HTML/CSS/JavaScript
+                  that load quickly, feel premium on mobile and guide people to
+                  take action.
+                </p>
+              </div>
+
+              <!-- PAS style copy -->
+              <div
+                class="content"
+                style="max-width: 900px; margin: 1rem auto 2rem"
+              >
+                <p>
+                  <strong>What’s the bottleneck?</strong> Slow pages, layout
+                  glitches and scattered UI make people bounce before they
+                  understand your value.
+                </p>
+                <p>
+                  <strong>What’s the impact?</strong> Lower trust, fewer
+                  inquiries, fragile releases and a team that avoids touching
+                  the site because changes feel risky.
+                </p>
+                <p>
+                  <strong>You don’t have to keep patching things.</strong> I
+                  ship lean, modular front-ends with clear patterns, measurable
+                  speed gains and conversion-first flows, so your site looks
+                  sharp, feels fast and consistently generates leads.
+                </p>
+              </div>
+
+              <!-- Packages grid -->
+              <div class="grid grid--cards grid--2cols">
+                <!-- Web dev Bronze -->
+                <article
+                  class="card content tier tier--bronze"
+                  aria-labelledby="wd-bronze-title"
+                >
+                  <h4 id="wd-bronze-title" class="center">
+                    Bronze – Performance & UX Starter
+                  </h4>
+                  <p>- A focused pass to fix the foundation.</p>
+                  <p>
+                    - I tighten mobile spacing and typography rhythm, clean up
+                    HTML/CSS, remove layout shifts, compress and defer assets
+                    and add accessible labels and focus states.
+                  </p>
+                  <p>
+                    - Minor JavaScript errors are resolved, Netlify forms are
+                    wired with spam protection and baseline metrics like
+                    LCP/CLS/INP are set so you see real speed gains.
+                  </p>
+                  <p>
+                    - The result is a cleaner, faster site that feels
+                    trustworthy on any device.
+                  </p>
+                  <p class="center">
+                    <a
+                      href="discovery.html?service=webdev&tier=bronze"
+                      class="btn"
+                      >Get your Performance & UX Starter</a
+                    >
+                  </p>
+                </article>
+
+                <!-- Web dev Silver -->
+                <article
+                  class="card content tier tier--silver"
+                  aria-labelledby="wd-silver-title"
+                >
+                  <h4 id="wd-silver-title" class="center">
+                    Silver – Conversion Feature Build
+                  </h4>
+                  <p>
+                    - When one decisive feature moves the needle. I design and
+                    code a high-impact module such as a booking or lead form
+                    with validation and smart states, an interactive gallery or
+                    map, a pricing/ROI calculator or a mini-landing for a single
+                    offer.
+                  </p>
+                  <p>
+                    - Micro-copy removes friction at the last step, events are
+                    tracked for retargeting and the thank-you flow closes the
+                    loop.
+                  </p>
+                  <p>
+                    - Everything is built as modular components you can reuse
+                    and launched without downtime.
+                  </p>
+                  <p class="center">
+                    <a
+                      href="discovery.html?service=webdev&tier=silver"
+                      class="btn"
+                      >Get your Conversion Feature Build</a
+                    >
+                  </p>
+                </article>
+
+                <!-- Web dev Gold -->
+                <article
+                  class="card content tier tier--gold"
+                  aria-labelledby="wd-gold-title"
+                >
+                  <h4 id="wd-gold-title" class="center">
+                    Gold – Site Refresh & Conversion System
+                  </h4>
+                  <p>A cohesive refresh of the pages that sell.</p>
+                  <p>
+                    - I restructure navigation and key pages, typically Home,
+                    Services, About, and Contact, unify components with design
+                    tokens, sharpen messages, calls to action and add an
+                    internal landing for your main offer.
+                  </p>
+                  <p>
+                    - Performance budgets keep pages snappy, schema basics help
+                    search engines understand your content and retargeting-ready
+                    events are set.
+                  </p>
+                  <p>
+                    - Cross-device QA and a smooth launch are included so you
+                    can go live with confidence.
+                  </p>
+                  <p class="center">
+                    <a
+                      href="discovery.html?service=webdev&tier=gold"
+                      class="btn"
+                      >Get your Site Refresh & Conversion System</a
+                    >
+                  </p>
+                </article>
+
+                <!-- Web dev Platinum -->
+                <article
+                  class="card content tier tier--platinum"
+                  aria-labelledby="wd-platinum-title"
+                >
+                  <h4 id="wd-platinum-title" class="center">
+                    Platinum – App/Portal MVP
+                  </h4>
+                  <p>
+                    For teams ready to prototype a lightweight web app or client
+                    portal.
+                  </p>
+                  <p>
+                    - I build a modular front-end with clear state management in
+                    vanilla JavaScript/Python, data tables with search and
+                    filters, map or dashboard visualizations and simple
+                    localization (EN/IT/NO).
+                  </p>
+                  <p>
+                    - Integrations are kept pragmatic, Netlify Forms, webhooks,
+                    CSV import/export, so you get speed without heavy backends.
+                  </p>
+                  <p>
+                    - You receive a concise change log and code that’s easy to
+                    extend; continued evolution is available via the Monthly
+                    Growth Engine.
+                  </p>
+                  <p class="center">
+                    <a
+                      href="discovery.html?service=webdev&tier=platinum"
+                      class="btn"
+                      >Launch your App/Portal MVP</a
+                    >
+                  </p>
+                </article>
+              </div>
+            </div>
+          </section>
+
+          <div class="center">
+            <a href="discovery.html" class="btn">
+              📜 Fill the questionnaire & book your free 45-minute 📞 call for a
+              free quote ✅
+            </a>
           </div>
+          <br />
+          <br />
 
-          <!-- Packages grid -->
-          <div class="grid grid--cards grid--2cols">
+          <!-- FAQ section -->
+          <section
+            class="section section--panel"
+            id="faq"
+            aria-labelledby="faq-title"
+          >
+            <div class="container content">
+              <h2 id="faq-title" class="center">
+                ❓ Frequently Asked Questions 🤔 (FAQ)
+              </h2>
 
-            <!-- Business Websites – packages (no bullets) -->
-<!-- Marketing Bronze card -->
-<article class="card content tier tier--bronze" aria-labelledby="mk-bronze-title">
-  <h4 id="mk-bronze-title" class="center">Bronze — Launch Essentials</h4>
-  <p>Start generating qualified inquiries for one clear offer with a lean, testable funnel.</p>
-  <div class="stack">
-    <p>I sharpen your offer and ideal customer so every message speaks to real buyers.</p>
-    <p>I build a focused landing that moves visitors from curiosity to booking without friction.</p>
-    <p>I write and set up a 3-email mini sequence — announce, follow-up, last call — to convert warm attention.</p>
-    <p>I activate one acquisition channel (Meta Ads or Google Search) with two testable creatives.</p>
-    <p>I connect scheduling and basic tracking so leads and booked calls are measurable from day one.</p>
-  </div>
-  <p class="center">
-    <a href="discovery.html?service=marketing&tier=bronze" class="btn">Get Your Marketing System (Bronze)</a>
-  </p>
-</article>
+              <!-- FAQ list -->
+              <div class="faq-list">
+                <!-- FAQ item -->
+                <details class="faq box">
+                  <summary>
+                    <h3 class="faq__q">
+                      What if we invest and it does not work?
+                    </h3>
+                    <span class="faq__icon" aria-hidden="true"></span>
+                  </summary>
+                  <div class="faq__content">
+                    <p>
+                      We set measurable goals such as qualified leads and booked
+                      calls. Scope is aligned to those goals, copy is written
+                      for conversions and results are tracked with analytics and
+                      pixels when ads are used.
+                    </p>
+                    <p>
+                      You can also review the Zero Risk, 100% Money Back policy
+                      on the guarantee page 👇🏻.
+                    </p>
+                    <p>
+                      <a href="guarantee.html">See the Zero Risk Guarantee</a>
+                    </p>
+                  </div>
+                </details>
 
-<!-- Marketing Silver card -->
-<article class="card content tier tier--silver" aria-labelledby="mk-silver-title">
-  <h4 id="mk-silver-title" class="center">Silver — Launch & Nurture</h4>
-  <p>Warm up prospects across more touchpoints and reduce time to booked call.</p>
-  <div class="stack">
-    <p>Everything in Bronze, plus a 5-email nurture that tells your story, handles objections, and adds proof.</p>
-    <p>A light lead magnet one-pager to capture emails from colder traffic.</p>
-    <p>Three “occasion” emails (holiday, anniversary, event) to spark easy wins without heavy production.</p>
-    <p>Acquisition on two channels (Meta + Google) with four creative variations and basic targeting.</p>
-    <p>Professional presence polish: LinkedIn company page and Google Business Profile tuned for credibility and calls.</p>
-  </div>
-  <p class="center">
-    <a href="discovery.html?service=marketing&tier=silver" class="btn">Get Your Marketing System (Silver)</a>
-  </p>
-</article>
+                <!-- FAQ item -->
+                <details class="faq box">
+                  <summary>
+                    <h3 class="faq__q">
+                      How long does a typical project take?
+                    </h3>
+                    <span class="faq__icon" aria-hidden="true"></span>
+                  </summary>
+                  <div class="faq__content">
+                    <p>
+                      Most websites take 2 to 4 weeks depending on pages,
+                      content and assets. Timeline depends on content readiness
+                      and feedback speed. You receive checkpoints for wireframe,
+                      copy, design, build and launch.
+                    </p>
+                  </div>
+                </details>
 
-<!-- Marketing Gold card -->
-<article class="card content tier tier--gold" aria-labelledby="mk-gold-title">
-  <h4 id="mk-gold-title" class="center">Gold — Always-On Engine</h4>
-  <p>Build momentum with campaigns that attract, convert, and reactivate — week after week.</p>
-  <div class="stack">
-    <p>Everything in Silver, plus a dormant-client reactivation (email + light retargeting) to recover hidden revenue.</p>
-    <p>A product/service launch pack orchestrated across pre-launch, launch, and post-launch for predictable spikes.</p>
-    <p>A hiring campaign: a clear job page with screening questions, plus ads that attract the right applicants.</p>
-    <p>A post-purchase flow that asks for reviews and referrals at the perfect moment.</p>
-    <p>A mini CRM page inside your site — leads auto-log from forms and bookings, quick filters, and CSV export.</p>
-    <p>Structured retargeting and simple A/B tests for ads and emails to keep performance improving.</p>
-  </div>
-  <p class="center">
-    <a href="discovery.html?service=marketing&tier=gold" class="btn">Get Your Marketing System (Gold)</a>
-  </p>
-</article>
+                <!-- FAQ item -->
+                <details class="faq box">
+                  <summary>
+                    <h3 class="faq__q">What is not included by default?</h3>
+                    <span class="faq__icon" aria-hidden="true"></span>
+                  </summary>
+                  <div class="faq__content">
+                    <p>
+                      Ongoing ad management, professional photography or video,
+                      complex back end apps, third party subscription fees and
+                      advanced SEO retainers are not included by default.
+                    </p>
+                    <p>
+                      If you need any of these, they can be quoted separately.
+                    </p>
+                  </div>
+                </details>
 
-<!-- Marketing Platinum card -->
-<article class="card content tier tier--platinum" aria-labelledby="mk-platinum-title">
-  <h4 id="mk-platinum-title" class="center">Platinum — Omnichannel Scale</h4>
-  <p>Everything you need to scale multiple offers and markets while staying on brand and in control.</p>
-  <div class="stack">
-    <p>Everything in Gold, plus a high-impact “lumpy mail” pack for top prospects — a tailored letter, a branded gift, an offer brochure, a reviews booklet, and a guarantee certificate — written, designed, and coordinated end-to-end.</p>
-    <p>Multi-offer segmentation with dedicated landings and branched emails based on segment and behavior.</p>
-    <p>Brand identity (or refresh): logo, palette, and a punchy tagline applied across site and social profiles.</p>
-    <p>Ads expansion with advanced audiences, bigger budgets, and high-impact creative variations that scale.</p>
-    <p>Optional internationalization: a second language (EN/IT/NO/DE/FR) across key pages, emails, and funnels.</p>
-    <p>A simple KPI snapshot (leads & bookings) with month-over-month comparison — zero extra work for your team.</p>
-  </div>
-  <p class="center">
-    <a href="discovery.html?service=marketing&tier=platinum" class="btn">Get Your Marketing System (Platinum)</a>
-  </p>
-</article>
+                <!-- FAQ item -->
+                <details class="faq box">
+                  <summary>
+                    <h3 class="faq__q">
+                      Can you work on our existing site or do you rebuild?
+                    </h3>
+                    <span class="faq__icon" aria-hidden="true"></span>
+                  </summary>
+                  <div class="faq__content">
+                    <p>
+                      I start with a quick audit. If the foundation is stable, I
+                      improve UX, copy and performance.
+                    </p>
+                    <p>
+                      If the platform blocks results, I propose a lean rebuild
+                      that keeps your branding and content where possible.
+                    </p>
+                  </div>
+                </details>
 
-          </div>
-        </div>
-      </section>
+                <!-- FAQ item -->
+                <details class="faq box">
+                  <summary>
+                    <h3 class="faq__q">
+                      What stack do you use and who owns the assets?
+                    </h3>
+                    <span class="faq__icon" aria-hidden="true"></span>
+                  </summary>
+                  <div class="faq__content">
+                    <p>
+                      Clean HTML, CSS, Python and JavaScript with a lightweight
+                      CMS when needed and integrations like MailerLite or
+                      HubSpot.
+                    </p>
+                    <p>
+                      You own the code, the domains and the accounts. Everything
+                      is handed over with access and documentation.
+                    </p>
+                  </div>
+                </details>
 
-      
-     <div class="center">
-        <a href="discovery.html" class="btn">
-          📜 Fill the questionnaire & book your free 45-minute 📞 call for a free quote ✅
-        </a>
+                <!-- FAQ item -->
+                <details class="faq box">
+                  <summary>
+                    <h3 class="faq__q">
+                      How do we measure success after launch?
+                    </h3>
+                    <span class="faq__icon" aria-hidden="true"></span>
+                  </summary>
+                  <div class="faq__content">
+                    <p>
+                      <strong>Practical and zero maintenance.</strong> We
+                      measure leads and booked calls.
+                    </p>
+                    <ul>
+                      <li>
+                        <strong>Baseline.</strong> Current weekly average from
+                        the last 30 days.
+                      </li>
+                      <li>
+                        <strong>Compare.</strong> Same numbers at day 30 and day
+                        60 after launch.
+                      </li>
+                      <li>
+                        <strong>Auto log.</strong> Forms send to your email and
+                        to a spreadsheet. Bookings from your scheduler are
+                        counted in the same sheet.
+                      </li>
+                      <li>
+                        <strong>Scope.</strong> We measure interest created.
+                        Closing sales remains with your team.
+                      </li>
+                    </ul>
+                  </div>
+                </details>
+
+                <!-- FAQ item -->
+                <details class="faq box">
+                  <summary>
+                    <h3 class="faq__q">What if leads rise but sales do not?</h3>
+                    <span class="faq__icon" aria-hidden="true"></span>
+                  </summary>
+                  <div class="faq__content">
+                    <p>
+                      That points to qualification or the sales process, not
+                      traffic quality.
+                    </p>
+                    <p>
+                      The site and campaigns are accountable for awareness and
+                      interest.
+                    </p>
+                    <p>
+                      If you use the mini CRM page, you can tag outcomes to see
+                      patterns and adjust scripts or offers.
+                    </p>
+                  </div>
+                </details>
+
+                <!-- FAQ item -->
+                <details class="faq box">
+                  <summary>
+                    <h3 class="faq__q">
+                      Can we have a simple place to track leads?
+                    </h3>
+                    <span class="faq__icon" aria-hidden="true"></span>
+                  </summary>
+                  <div class="faq__content">
+                    <p>Yes, as an optional add on.</p>
+                    <p>
+                      I can add a light CRM page inside the site with a lead
+                      table, quick filters and CSV export.
+                    </p>
+                    <p>Submissions and bookings appear automatically.</p>
+                  </div>
+                </details>
+
+                <!-- FAQ item -->
+                <details class="faq box">
+                  <summary>
+                    <h3 class="faq__q">What about SEO?</h3>
+                    <span class="faq__icon" aria-hidden="true"></span>
+                  </summary>
+                  <div class="faq__content">
+                    <p>
+                      SEO basics are included: technical structure, on page
+                      tags, speed and accessibility.
+                    </p>
+                    <p>
+                      Content strategy, backlinks and ongoing SEO campaigns can
+                      be quoted if needed.
+                    </p>
+                  </div>
+                </details>
+
+                <!-- FAQ item -->
+                <details class="faq box">
+                  <summary>
+                    <h3 class="faq__q">What do you need from us to start?</h3>
+                    <span class="faq__icon" aria-hidden="true"></span>
+                  </summary>
+                  <div class="faq__content">
+                    <ul>
+                      <li>Brand assets and guidelines if available</li>
+                      <li>Your offers, services and pricing</li>
+                      <li>Three reference sites you like and why</li>
+                      <li>Preferred tone of voice and no go areas</li>
+                      <li>Access to current site, domain and tools</li>
+                    </ul>
+                  </div>
+                </details>
+
+                <!-- FAQ item -->
+                <details class="faq box">
+                  <summary>
+                    <h3 class="faq__q">How do payments work?</h3>
+                    <span class="faq__icon" aria-hidden="true"></span>
+                  </summary>
+                  <div class="faq__content">
+                    <p>
+                      All projects begin with an upfront payment to secure your
+                      place in my schedule. Depending on the service you choose:
+                    </p>
+
+                    <ul>
+                      <li>
+                        <strong>Business Development &amp; Marketing</strong> →
+                        A one-time setup fee followed by a monthly retainer,
+                        always paid in advance. Advertising budgets remain under
+                        your direct control.
+                      </li>
+                      <li>
+                        <strong>Web Development</strong> → Milestone-based
+                        payments (e.g., 40% upfront, 30% mid-project, 30% before
+                        launch). Final delivery and ownership transfer occur
+                        only once the balance is cleared.
+                      </li>
+                    </ul>
+
+                    <p>
+                      We keep it simple: you always know exactly what you are
+                      paying for, and I guarantee premium delivery at every
+                      stage.
+                    </p>
+                  </div>
+                </details>
+
+                <!-- FAQ item -->
+                <details class="faq box">
+                  <summary>
+                    <h3 class="faq__q">
+                      Do you offer ongoing support after launch?
+                    </h3>
+                    <span class="faq__icon" aria-hidden="true"></span>
+                  </summary>
+                  <div class="faq__content">
+                    <p>
+                      Yes. If you want steady momentum, you can add the Monthly
+                      Growth Engine for updates, content, and small campaigns.
+                      If you prefer ad hoc help, you can request support when
+                      needed.
+                    </p>
+                  </div>
+                </details>
+
+                <!-- FAQ item -->
+                <details class="faq box">
+                  <summary>
+                    <h3 class="faq__q">
+                      We do not have a marketing team or technical skills
+                    </h3>
+                    <span class="faq__icon" aria-hidden="true"></span>
+                  </summary>
+                  <div class="faq__content">
+                    <p>
+                      I am your team. You share goals and assets, I handle
+                      planning, copy, design, build, and launch. After launch I
+                      take care of all edits and updates for you. If you want
+                      zero maintenance, the Monthly Growth Engine keeps
+                      improvements, content, and fixes off your plate.
+                    </p>
+                  </div>
+                </details>
+              </div>
+            </div>
+          </section>
+        </article>
       </div>
+    </main>
 
-<!-- Web Development section -->
-<section class="section" id="web-development" aria-labelledby="webdev-title">
-  <div class="container">
-    <h2 id="webdev-title" class="center">💻 Web Development</h2>
-
-    <!-- Section copy -->
-    <div class="content center" style="max-width:860px;margin:0 auto;">
-      <p class="overline">Clean code, commercial outcomes</p>
-      <h3 class="center">Fast, reliable front-ends that turn visits into bookings and sales</h3>
-      <p class="subtitle">I design and build modular interfaces in HTML/CSS/JS that load quickly, feel premium on mobile and guide people to take action.</p>
+    <div class="center">
+      <a
+        href="guarantee.html"
+        class="btn"
+        aria-label="See the Zero Risk, 100% Money Back guarantee"
+      >
+        ✅ See the <strong>“Zero Risk, 100% Money Back”</strong> Guarantee ✅
+      </a>
     </div>
+    <br />
+    <br />
 
-    <!-- PAS style copy -->
-    <div class="content" style="max-width:900px;margin:1rem auto 2rem;">
-      <p><strong>What’s the bottleneck?</strong> Slow pages, layout glitches and scattered UI make people bounce before they understand your value.</p>
-      <p><strong>What’s the impact?</strong> Lower trust, fewer inquiries, fragile releases and a team that avoids touching the site because changes feel risky.</p>
-      <p><strong>You don’t have to keep patching things.</strong> I ship lean, modular front-ends with clear patterns, measurable speed gains and conversion-first flows, so your site looks sharp, feels fast, and consistently generates leads.</p>
-    </div>
-
-    <!-- Packages grid -->
-    <div class="grid grid--cards grid--2cols">
-
-      <!-- Web dev Bronze -->
-      <article class="card content tier tier--bronze" aria-labelledby="wd-bronze-title">
-        <h4 id="wd-bronze-title" class="center">Bronze – Performance & UX Starter</h4>
-        <p>A focused pass to fix the foundation. I tighten mobile spacing and typography rhythm, clean up HTML/CSS, remove layout shifts, compress and defer assets and add accessible labels and focus states. Minor JavaScript errors are resolved, Netlify forms are wired with spam protection and baseline metrics like LCP/CLS/INP are set so you see real speed gains. The result is a cleaner, faster site that feels trustworthy on any device.</p>
-        <p class="center"><a href="discovery.html?service=webdev&tier=bronze" class="btn">Start with Bronze</a></p>
-      </article>
-
-      <!-- Web dev Silver -->
-      <article class="card content tier tier--silver" aria-labelledby="wd-silver-title">
-        <h4 id="wd-silver-title" class="center">Silver – Conversion Feature Build</h4>
-        <p>When one decisive feature moves the needle. I design and code a high-impact module such as a booking or lead form with validation and smart states, an interactive gallery or map, a pricing/ROI calculator, or a mini-landing for a single offer. Micro-copy removes friction at the last step, events are tracked for retargeting and the thank-you flow closes the loop. Everything is built as modular components you can reuse and launched without downtime.</p>
-        <p class="center"><a href="discovery.html?service=webdev&tier=silver" class="btn">Add a Conversion Feature</a></p>
-      </article>
-
-      <!-- Web dev Gold -->
-      <article class="card content tier tier--gold" aria-labelledby="wd-gold-title">
-        <h4 id="wd-gold-title" class="center">Gold – Site Refresh & Conversion System</h4>
-        <p>A cohesive refresh of the pages that sell. I restructure navigation and key pages, typically Home, Services, About, and Contact, unify components with design tokens, sharpen messages and calls to action, and add an internal landing for your main offer. Performance budgets keep pages snappy, schema basics help search engines understand your content and retargeting-ready events are set. Cross-device QA and a smooth launch are included so you can go live with confidence.</p>
-        <p class="center"><a href="discovery.html?service=webdev&tier=gold" class="btn">Refresh for Results</a></p>
-      </article>
-
-      <!-- Web dev Platinum -->
-      <article class="card content tier tier--platinum" aria-labelledby="wd-platinum-title">
-        <h4 id="wd-platinum-title" class="center">Platinum – App/Portal MVP</h4>
-        <p>For teams ready to prototype a lightweight web app or client portal. I build a modular front-end with clear state management in vanilla JavaScript, data tables with search and filters, map or dashboard visualizations and simple localization (EN/IT/NO). Integrations are kept pragmatic, Netlify Forms, webhooks, CSV import/export, so you get speed without heavy backends. You receive a concise change log and code that’s easy to extend; continued evolution is available via the Monthly Growth Engine.</p>
-        <p class="center"><a href="discovery.html?service=webdev&tier=platinum" class="btn">Launch an MVP</a></p>
-      </article>
-
-    </div>
-  </div>
-</section>
-
-
-      <div class="center">
-        <a href="discovery.html" class="btn">
-          📜 Fill the questionnaire & book your free 45-minute 📞 call for a free quote ✅
-        </a>
-      </div>
-      <br/>
-      <br/>
-      
-
-      <!-- FAQ section -->
-<section class="section section--panel" id="faq" aria-labelledby="faq-title">
-  <div class="container content">
-    <h2 id="faq-title" class="center"> ❓ Frequently Asked Questions 🤔 (FAQ)</h2>
-
-    <!-- FAQ list -->
-    <div class="faq-list">
-
-      <!-- FAQ item -->
-      <details class="faq box">
-        <summary>
-          <h3 class="faq__q">What if we invest and it does not work?</h3>
-          <span class="faq__icon" aria-hidden="true"></span>
-        </summary>
-        <div class="faq__content">
-          <p>We set measurable goals such as qualified leads and booked calls. Scope is aligned to those goals, copy is written for conversions, and results are tracked with analytics and pixels when ads are used. You can also review the Zero Risk, 100% Money Back policy on the guarantee page.</p>
-          <p><a href="guarantee.html">See the guarantee</a></p>
-        </div>
-      </details>
-
-      <!-- FAQ item -->
-      <details class="faq box">
-        <summary>
-          <h3 class="faq__q">How long does a typical project take?</h3>
-          <span class="faq__icon" aria-hidden="true"></span>
-        </summary>
-        <div class="faq__content">
-          <p>Most websites take 2 to 4 weeks depending on pages and assets. Timeline depends on content readiness and feedback speed. You receive checkpoints for wireframe, copy, design, build, and launch.</p>
-        </div>
-      </details>
-
-      <!-- FAQ item -->
-      <details class="faq box">
-        <summary>
-          <h3 class="faq__q">What exactly is included?</h3>
-          <span class="faq__icon" aria-hidden="true"></span>
-        </summary>
-        <div class="faq__content">
-          <ul>
-            <li>Discovery and positioning for your offer and audience</li>
-            <li>Wireframe and information architecture</li>
-            <li>Conversion copy for key pages and calls to action</li>
-            <li>Design and build with responsive layout and accessibility basics</li>
-            <li>SEO basics with structure, titles, meta, and alt text</li>
-            <li>Performance pass and quality assurance</li>
-            <li>Launch support and 1 month of email support</li>
-          </ul>
-        </div>
-      </details>
-
-      <!-- FAQ item -->
-      <details class="faq box">
-        <summary>
-          <h3 class="faq__q">What is not included by default?</h3>
-          <span class="faq__icon" aria-hidden="true"></span>
-        </summary>
-        <div class="faq__content">
-          <p>Ongoing ad management, professional photography or video, complex back end apps, third party subscription fees, and advanced SEO retainers are not included by default. If you need any of these, they can be quoted separately.</p>
-        </div>
-      </details>
-
-      <!-- FAQ item -->
-      <details class="faq box">
-        <summary>
-          <h3 class="faq__q">Can you work on our existing site or do you rebuild?</h3>
-          <span class="faq__icon" aria-hidden="true"></span>
-        </summary>
-        <div class="faq__content">
-          <p>I start with a quick audit. If the foundation is stable, I improve UX, copy, and performance. If the platform blocks results, I propose a lean rebuild that keeps your branding and content where possible.</p>
-        </div>
-      </details>
-
-      <!-- FAQ item -->
-      <details class="faq box">
-        <summary>
-          <h3 class="faq__q">What stack do you use and who owns the assets?</h3>
-          <span class="faq__icon" aria-hidden="true"></span>
-        </summary>
-        <div class="faq__content">
-          <p>Clean HTML, CSS, and JS with a lightweight CMS when needed and integrations like MailerLite or HubSpot. You own the code, the domains, and the accounts. Everything is handed over with access and documentation.</p>
-        </div>
-      </details>
-
-      <!-- FAQ item -->
-      <details class="faq box">
-        <summary>
-          <h3 class="faq__q">How do we measure success after launch?</h3>
-          <span class="faq__icon" aria-hidden="true"></span>
-        </summary>
-        <div class="faq__content">
-          <p><strong>Practical and zero maintenance.</strong> We measure leads and booked calls.</p>
-          <ul>
-            <li><strong>Baseline.</strong> Current weekly average from the last 30 days.</li>
-            <li><strong>Compare.</strong> Same numbers at day 30 and day 60 after launch.</li>
-            <li><strong>Auto log.</strong> Forms send to your email and to a spreadsheet. Bookings from your scheduler are counted in the same sheet.</li>
-            <li><strong>Scope.</strong> We measure interest created. Closing sales remains with your team.</li>
-          </ul>
-        </div>
-      </details>
-
-      <!-- FAQ item -->
-      <details class="faq box">
-        <summary>
-          <h3 class="faq__q">What if leads rise but sales do not?</h3>
-          <span class="faq__icon" aria-hidden="true"></span>
-        </summary>
-        <div class="faq__content">
-          <p>That points to qualification or the sales process, not traffic quality. The site and campaigns are accountable for awareness and interest. If you use the mini CRM page, you can tag outcomes to see patterns and adjust scripts or offers.</p>
-        </div>
-      </details>
-
-      <!-- FAQ item -->
-      <details class="faq box">
-        <summary>
-          <h3 class="faq__q">Can we have a simple place to track leads?</h3>
-          <span class="faq__icon" aria-hidden="true"></span>
-        </summary>
-        <div class="faq__content">
-          <p>Yes, as an optional add on. I can add a light CRM page inside the site with a lead table, quick filters, and CSV export. Submissions and bookings appear automatically.</p>
-        </div>
-      </details>
-
-      <!-- FAQ item -->
-      <details class="faq box">
-        <summary>
-          <h3 class="faq__q">What about SEO?</h3>
-          <span class="faq__icon" aria-hidden="true"></span>
-        </summary>
-        <div class="faq__content">
-          <p>SEO basics are included: technical structure, on page tags, speed, and accessibility. Content strategy, backlinks, and ongoing SEO campaigns can be quoted if needed.</p>
-        </div>
-      </details>
-
-      <!-- FAQ item -->
-      <details class="faq box">
-        <summary>
-          <h3 class="faq__q">What do you need from us to start?</h3>
-          <span class="faq__icon" aria-hidden="true"></span>
-        </summary>
-        <div class="faq__content">
-          <ul>
-            <li>Brand assets and guidelines if available</li>
-            <li>Your offer, services, and pricing</li>
-            <li>Three reference sites you like and why</li>
-            <li>Preferred tone of voice and no go areas</li>
-            <li>Access to current site, domain, and tools</li>
-          </ul>
-        </div>
-      </details>
-
-      <!-- FAQ item -->
-      <details class="faq box">
-        <summary>
-          <h3 class="faq__q">How do payments work?</h3>
-          <span class="faq__icon" aria-hidden="true"></span>
-        </summary>
-        <div class="faq__content">
-          <p>Simple structure: 50 percent to start and 50 percent before launch. You receive an invoice for each payment. Bank transfer is accepted. Other methods can be arranged if required.</p>
-        </div>
-      </details>
-
-      <!-- FAQ item -->
-      <details class="faq box">
-        <summary>
-          <h3 class="faq__q">Do you offer ongoing support after launch?</h3>
-          <span class="faq__icon" aria-hidden="true"></span>
-        </summary>
-        <div class="faq__content">
-          <p>Yes. If you want steady momentum, you can add the Monthly Growth Engine for updates, content, and small campaigns. If you prefer ad hoc help, you can request support when needed.</p>
-        </div>
-      </details>
-
-      <!-- FAQ item -->
-<details class="faq box">
-  <summary>
-    <h3 class="faq__q">We do not have a marketing team or technical skills</h3>
-    <span class="faq__icon" aria-hidden="true"></span>
-  </summary>
-  <div class="faq__content">
-    <p>I am your team. You share goals and assets, I handle planning, copy, design, build, and launch. After launch I take care of all edits and updates for you. If you want zero maintenance, the Monthly Growth Engine keeps improvements, content, and fixes off your plate.</p>
-  </div>
-</details>
-
-    </div>
-  </div>
-</section>
-
-    </article>
-  </div>
-</main>
-
-<div class="center">
-        <a href="guarantee.html" class="btn" aria-label="See the Zero Risk, 100% Money Back guarantee">
-          ✅ See the <strong>“Zero Risk, 100% Money Back”</strong> Guarantee ✅
-        </a>
-      </div>
-      <br/>
-      <br/>
-
-<!-- Footer -->
-<footer class="section section--panel" aria-labelledby="footer-title">
-  <div class="container">
-    <!-- Footer landmark -->
-    <h2 id="footer-title" class="sr-only">Ready to start? Let’s build your success together!</h2>
+    <!-- Footer -->
+    <footer class="section section--panel" aria-labelledby="footer-title">
+      <div class="container">
+        <!-- Footer landmark -->
+        <h2 id="footer-title" class="sr-only">
+          Ready to start? Let’s build your success together!
+        </h2>
 
     <!-- Footer grid -->
     <div class="grid" style="grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: clamp(14px, 2.2vw, 22px); align-items: start;">
@@ -662,57 +1345,127 @@
       <!-- Contact -->
       <div>
         <h3 style="margin:0 0 .5rem;">Contact me</h3>
-        <p class="m-0"><a href="mailto:coded.by.stella.webdev@gmail.com">coded.by.stella.webdev@gmail.com</a></p>
+        <p class="m-0"><a href="mailto:stella.marrali@gmail.com">stella.marrali.no@gmail.com</a></p>
         <p class="social-inline" style="margin-top:.5rem;">
           <a href="https://www.linkedin.com/in/stella-marrali-3b3528384/" target="_blank" rel="noreferrer noopener">LinkedIn</a>
           <a href="https://www.instagram.com/coded_by_stella/" target="_blank" rel="noreferrer noopener">Instagram</a>
         </p>
       </div>
 
-      <!-- Start here -->
-      <div>
-        <h3 style="margin:0 0 .5rem;">Start here</h3>
-        <p class="m-0"><a class="btn" style="min-height:40px; padding:.6rem .9rem; font-size:.95rem;" href="discovery.html" target="_blank">Complete the discovery form</a></p>
-        <p style="margin-top:.6rem;"><a href="guarantee.html" target="_blank">Read the Zero Risk Money Back guarantee</a></p>
+          <!-- Start here -->
+          <div>
+            <h3 style="margin: 0 0 0.5rem">Start here</h3>
+            <p class="m-0">
+              <a
+                class="btn"
+                style="
+                  min-height: 40px;
+                  padding: 0.6rem 0.9rem;
+                  font-size: 0.95rem;
+                "
+                href="discovery.html"
+                target="_blank"
+                >Complete the discovery form</a
+              >
+            </p>
+            <p style="margin-top: 0.6rem">
+              <a href="guarantee.html" target="_blank"
+                >Read the Zero Risk Money Back guarantee</a
+              >
+            </p>
+          </div>
+
+          <!-- Explore -->
+          <div>
+            <h3 style="margin: 0 0 0.5rem">Explore</h3>
+            <ul
+              style="
+                list-style: none;
+                margin: 0;
+                padding: 0;
+                display: grid;
+                gap: 0.45rem;
+              "
+            >
+              <li><a href="projects.html" target="_blank">Projects</a></li>
+              <li>
+                <a href="certifications.html" target="_blank">Certifications</a>
+              </li>
+              <li>
+                <a href="marketing-courses.html" target="_blank"
+                  >Marketing Training</a
+                >
+              </li>
+              <li>
+                <a href="services.html" aria-current="page" target="_blank"
+                  >Services</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <!-- Quick links -->
+          <div>
+            <h3 style="margin: 0 0 0.5rem">Quick links</h3>
+            <p class="m-0">
+              <a
+                href="https://portfolio-codedbystella.netlify.app/"
+                target="_blank"
+                rel="noreferrer noopener"
+                >Portfolio</a
+              >
+            </p>
+            <p style="margin-top: 0.45rem">
+              <a
+                href="https://github.com/coded-by-stella"
+                target="_blank"
+                rel="noreferrer noopener"
+                >GitHub</a
+              >
+            </p>
+            <p style="margin-top: 0.45rem">
+              <a
+                href="https://app.netlify.com/teams/coded-by-stella/projects"
+                target="_blank"
+                rel="noreferrer noopener"
+                >Netlify</a
+              >
+            </p>
+          </div>
+        </div>
+
+        <!-- Footer bottom -->
+        <hr aria-hidden="true" />
+        <p class="center footnote" style="margin-top: 1rem">
+          © <span id="year"></span> This website portfolio was designed and
+          coded with ❤️ by
+          <a
+            href="https://portfolio-codedbystella.netlify.app/"
+            target="_blank"
+            rel="noreferrer noopener"
+            >Stella Marrali</a
+          >, is open-sourced on
+          <a
+            href="https://github.com/coded-by-stella"
+            target="_blank"
+            rel="noreferrer noopener"
+            >GitHub</a
+          >
+          and hosted on
+          <a
+            href="https://app.netlify.com/teams/coded-by-stella/projects"
+            target="_blank"
+            rel="noreferrer noopener"
+            >Netlify</a
+          >.
+        </p>
       </div>
+    </footer>
 
-      <!-- Explore -->
-      <div>
-        <h3 style="margin:0 0 .5rem;">Explore</h3>
-        <ul style="list-style:none; margin:0; padding:0; display:grid; gap:.45rem;">
-          <li><a href="projects.html" target="_blank">Projects</a></li>
-          <li><a href="certifications.html" target="_blank">Certifications</a></li>
-          <li><a href="marketing-courses.html" target="_blank">Marketing Training</a></li>
-          <li><a href="services.html" aria-current="page" target="_blank">Services</a></li>
-        </ul>
-      </div>
-
-      <!-- Quick links -->
-      <div>
-        <h3 style="margin:0 0 .5rem;">Quick links</h3>
-        <p class="m-0"><a href="https://portfolio-codedbystella.netlify.app/" target="_blank" rel="noreferrer noopener">Portfolio</a></p>
-        <p style="margin-top:.45rem;"><a href="https://github.com/coded-by-stella" target="_blank" rel="noreferrer noopener">GitHub</a></p>
-        <p style="margin-top:.45rem;"><a href="https://app.netlify.com/teams/coded-by-stella/projects" target="_blank" rel="noreferrer noopener">Netlify</a></p>
-      </div>
-
-    </div>
-
-    <!-- Footer bottom -->
-    <hr aria-hidden="true" />
-    <p class="center footnote" style="margin-top:1rem;">
-      © <span id="year"></span> This website portfolio was designed and coded with ❤️ by
-      <a href="https://portfolio-codedbystella.netlify.app/" target="_blank" rel="noreferrer noopener">Stella Marrali</a>, is open-sourced on
-      <a href="https://github.com/coded-by-stella" target="_blank" rel="noreferrer noopener">GitHub</a> and hosted on
-      <a href="https://app.netlify.com/teams/coded-by-stella/projects" target="_blank" rel="noreferrer noopener">Netlify</a>.
-    </p>
-  </div>
-</footer>
-
-
-<!-- JS -->
-<script src="src/javascript.js" defer></script>
-<script>
-  document.getElementById('year').textContent = new Date().getFullYear();
-</script>
-</body>
+    <!-- JS -->
+    <script src="src/javascript.js" defer></script>
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+  </body>
 </html>
