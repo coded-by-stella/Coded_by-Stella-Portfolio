@@ -179,6 +179,64 @@
 
 })();
 
+  /* Cookie banner logic (essential-only) */
+  onReady(function(){
+    var banner = document.getElementById('cookie-banner');
+    if(!banner) return;
+
+    var KEY = 'cookieConsent';
+    var firstBtn = banner.querySelector('#cb-accept'); // per focus iniziale
+
+    // Se già deciso in passato, nascondi
+    try {
+      var stored = localStorage.getItem(KEY) || '';
+      if(stored) { banner.style.display = 'none'; }
+    } catch(e){}
+
+    // Bottoni
+    var btnAccept = document.getElementById('cb-accept');
+    var btnReject = document.getElementById('cb-reject');
+    var btnPrefs  = document.getElementById('cb-prefs');
+
+    function hide(val){
+      try { localStorage.setItem(KEY, val); } catch(e){}
+      banner.style.display = 'none';
+    }
+
+    if(btnAccept) btnAccept.addEventListener('click', function(){ hide('accepted'); });
+    if(btnReject) btnReject.addEventListener('click', function(){ hide('rejected'); });
+
+    // Preferences modal (informativo, solo essenziali)
+    var modal = document.getElementById('cookie-prefs');
+    var btnClose = document.getElementById('cp-close');
+    var lastFocus = null;
+
+    function openPrefs(){
+      if(!modal) return;
+      lastFocus = document.activeElement;
+      modal.hidden = false;
+      btnClose && btnClose.focus();
+      // escape per chiudere
+      document.addEventListener('keydown', escClose);
+    }
+    function closePrefs(){
+      if(!modal) return;
+      modal.hidden = true;
+      document.removeEventListener('keydown', escClose);
+      if(lastFocus && lastFocus.focus) lastFocus.focus();
+    }
+    function escClose(e){ if(e.key === 'Escape') closePrefs(); }
+
+    if(btnPrefs) btnPrefs.addEventListener('click', openPrefs);
+    if(btnClose) btnClose.addEventListener('click', closePrefs);
+
+    // Focus iniziale sul primo bottone per accessibilità
+    if(!stored && firstBtn && typeof firstBtn.focus === 'function'){
+      setTimeout(function(){ firstBtn.focus(); }, 50);
+    }
+  });
+
+
 /* File input: show selected file names */
 (() => {
   const controls = document.querySelectorAll('.file-control input[type="file"]');
