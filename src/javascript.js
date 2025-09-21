@@ -235,8 +235,6 @@
 })();
 
   
-
-
 /* File input: show selected file names */
 (() => {
   const controls = document.querySelectorAll('.file-control input[type="file"]');
