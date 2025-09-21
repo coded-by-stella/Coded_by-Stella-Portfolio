@@ -176,9 +176,6 @@
     });
   });
 
-})();
-
-  
   onReady(function(){
     var banner = document.getElementById('cookie-banner');
     if(!banner) return;
@@ -234,6 +231,10 @@
       setTimeout(function(){ firstBtn.focus(); }, 50);
     }
   });
+
+})();
+
+  
 
 
 /* File input: show selected file names */
