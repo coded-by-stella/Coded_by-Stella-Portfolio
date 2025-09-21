@@ -15,6 +15,43 @@
 
 </head>
 
+<!-- Cookie Banner -->
+<div id="cookie-banner"
+     class="box"
+     role="dialog"
+     aria-live="polite"
+     aria-label="Cookie notice"
+     style="position:fixed;left:50%;bottom:22px;transform:translateX(-50%);max-width:var(--single-col-card-max);z-index:9999;">
+  <div class="stack">
+    <p class="m-0">
+      We use only <strong>essential cookies</strong> to ensure the site works properly.
+      Read the <a href="cookies.html">Cookie Policy</a> and <a href="privacy.html">Privacy Policy</a>.
+    </p>
+    <div class="social-inline" style="justify-content:flex-end;">
+      <button type="button" class="btn btn--sm" id="cb-accept">Accept</button>
+      <button type="button" class="btn btn--sm" id="cb-reject" style="background:var(--card);color:var(--ink);border:1px solid var(--bd);">Reject</button>
+      <button type="button" class="btn btn--sm" id="cb-prefs" style="background:var(--card);color:var(--ink);border:1px solid var(--bd);">Preferences</button>
+    </div>
+  </div>
+</div>
+
+<!-- Minimal Preferences modal -->
+<div id="cookie-prefs"
+     class="box"
+     role="dialog"
+     aria-modal="true"
+     aria-labelledby="cookie-prefs-title"
+     hidden
+     style="position:fixed;left:50%;top:50%;transform:translate(-50%,-50%);max-width:640px;z-index:10000;">
+  <div class="stack">
+    <h3 id="cookie-prefs-title" class="m-0">Cookie Preferences</h3>
+    <p class="m-0">At this time, only essential cookies are used. No analytics, marketing, or tracking cookies are active.</p>
+    <div class="social-inline" style="justify-content:flex-end;">
+      <button type="button" class="btn btn--sm" id="cp-close">Close</button>
+    </div>
+  </div>
+</div>
+
 <body>
  <!-- Header -->
 <header class="section section--panel site-header">
