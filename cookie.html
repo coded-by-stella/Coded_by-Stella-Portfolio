@@ -3,62 +3,80 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Thanks – Coded_by_Stella</title>
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <title>Cookie Policy - Coded_by_Stella</title>
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+
+  <!-- Site CSS -->
   <link rel="stylesheet" href="src/style.css" />
-  <meta name="description" content="Thank you for your message – Coded_by_Stella" />
+
+  <meta name="description" content="Cookie Policy" />
 </head>
 <body>
- <!-- Header -->
-<header class="section section--panel site-header">
-  <div class="container">
-    <div class="grid grid--header">
-      <h1 class="site-title">
-        <img src="assets/favicon.ico" alt="Coded_by_Stella logo" class="logo-icon">
-        Coded_by_Stella
-        <span class="site-tagline">Business Strategies, Marketing and Web Development designed to attract, engage and win clients.</span>
-      </h1>
-
-      <!-- Mobile burger -->
-      <button id="navToggle" class="nav-toggle" aria-expanded="false" aria-controls="primaryNav" aria-label="Open menu">
-        <span class="sr-only">Menu</span>
-        <span class="nav-toggle__bars" aria-hidden="true"></span>
-      </button>
-
-      <!-- Single primary nav -->
-      <nav id="primaryNav" class="primary-nav" aria-label="Primary">
-        <ul class="nav-list">
-          <li><a href="index.html">About Stella</a></li>
-          <li><a href="services.html">Services</a></li>
-          <li><a href="certifications.html">Certificates</a></li>
-          <li><a href="marketing-courses.html">Marketing Training</a></li>
-          <li><a href="projects.html">Portfolio</a></li>
-          <li><a href="contact.html">Contact me</a></li>
-        </ul>
-
-        <!-- Theme toggle -->
-        <button id="themeToggle" class="theme-toggle" type="button" aria-label="Switch theme" aria-pressed="false">
-          <span class="theme-toggle__icon" aria-hidden="true">🌙</span>
-          <span class="theme-toggle__text">Dark</span>
-        </button>
-      </nav>
-    </div>
-  </div>
-</header>
-
-  <main class="section">
+  <!-- Header -->
+  <header class="section section--panel site-header">
     <div class="container">
-      <article class="content">
-        <h2 class="center">Thank you! 🎉</h2>
-        <section class="box stack center">
-          <p>Your message has been sent successfully. I’ll get back to you soon.</p>
-          <p style="display:flex; gap:.75rem; justify-content:center; flex-wrap:wrap;">
-            <a class="btn" href="./index.html">← Back to Portfolio</a>
-            <a class="btn" href="./projects.html">💻 See my Projects</a>
-          </p>
-        </section>
-      </article>
+      <div class="grid grid--header">
+        <h1 class="site-title">
+          <img src="assets/favicon.ico" alt="Coded_by_Stella logo" class="logo-icon" />
+          Coded_by_Stella
+          <span class="site-tagline">Business Strategies, Marketing and Web Development designed to attract, engage and win clients.</span>
+        </h1>
+
+        <!-- Mobile menu button -->
+        <button id="navToggle" class="nav-toggle" aria-expanded="false" aria-controls="primaryNav" aria-label="Open menu">
+          <span class="sr-only">Menu</span>
+          <span class="nav-toggle__bars" aria-hidden="true"></span>
+        </button>
+
+        <!-- Primary navigation -->
+        <nav id="primaryNav" class="primary-nav" aria-label="Primary">
+          <ul class="nav-list">
+            <li><a href="index.html">About Stella</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="certifications.html">Certificates</a></li>
+            <li><a href="marketing-courses.html">Marketing Training</a></li>
+            <li><a href="projects.html">Portfolio</a></li>
+            <li><a href="contact.html">Contact me</a></li>
+          </ul>
+
+          <!-- Theme toggle -->
+          <button id="themeToggle" class="theme-toggle" type="button" aria-label="Switch theme" aria-pressed="false">
+            <span class="theme-toggle__icon" aria-hidden="true">🌙</span>
+            <span class="theme-toggle__text">Dark</span>
+          </button>
+        </nav>
+      </div>
     </div>
+  </header>
+
+  <a class="sr-only sr-only-focusable" href="#main">Skip to content</a>
+
+  <main id="main">
+    <!-- COOKIE POLICY: wide panel -->
+    <section class="section section--panel" id="cookies">
+      <div class="container">
+        <article class="card content">
+          <h1>Cookie Policy</h1>
+          <p><em>Last updated: 21/09/2025</em></p>
+
+          <h2>1. What Are Cookies?</h2>
+          <p>Cookies are small text files stored on your device to ensure the website works properly.</p>
+
+          <h2>2. Types of Cookies Used</h2>
+          <ul>
+            <li><strong>Essential cookies:</strong> required for the website to function correctly (e.g., navigation, form submission).</li>
+          </ul>
+
+          <h2>3. No Analytics or Marketing Cookies</h2>
+          <p>At this time, we only use essential cookies. No analytics, tracking, or marketing cookies are active on this website.</p>
+
+          <h2>4. Managing Cookies</h2>
+          <p>You can accept or reject cookies through our cookie banner, or adjust your browser settings at any time.</p>
+        </article>
+      </div>
+    </section>
   </main>
 
   <!-- Footer -->
@@ -127,6 +145,8 @@
 </footer>
 
 
+  <!-- JS -->
   <script src="src/javascript.js" defer></script>
+  <script>document.getElementById("year") && (document.getElementById("year").textContent = new Date().getFullYear());</script>
 </body>
 </html>
