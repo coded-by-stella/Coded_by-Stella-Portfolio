@@ -663,3 +663,21 @@ html[data-theme="dark"] .file-ui{
   background:var(--card);
   border:1px solid var(--panel-border);
 }
+
+.hero-bullets {
+  list-style: none;
+  margin: 1.5rem auto;
+  padding: 0;
+  max-width: 780px;
+  text-align: left;
+}
+
+.hero-bullets li {
+  margin-bottom: 0.75rem;
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+.hero-bullets li strong {
+  color: var(--accent);
+}
